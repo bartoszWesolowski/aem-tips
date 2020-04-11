@@ -1,0 +1,23 @@
+mvn archetype:generate -B \
+  -DarchetypeGroupId=com.adobe.granite.archetypes \
+  -DarchetypeArtifactId=aem-project-archetype \
+  -DarchetypeVersion=22 \
+  -DgroupId=com.adobe.aem.examples \
+  -Dversion=0.0.1-SNAPSHOT \
+  -DappsFolderName=aem-examples \
+  -DartifactId=aem-examples \
+  -Dpackage=com.adobe.aem.examples \
+  -DartifactName="Aem examples Project" \
+  -DcomponentGroupName=Examples \
+  -DconfFolderName=aem-examples \
+  -DcontentFolderName=aem-examples \
+  -DcssId=aem-examples \
+  -DisSingleCountryWebsite=n \
+  -Dlanguage_country=en_us \
+  -DoptionAemVersion=6.5.0 \
+  -DoptionDispatcherConfig=none \
+  -DoptionIncludeErrorHandler=n \
+  -DoptionIncludeExamples=y \
+  -DoptionIncludeFrontendModule=y \
+  -DpackageGroup=aem-examples \
+  -DsiteName="AEM examples"
