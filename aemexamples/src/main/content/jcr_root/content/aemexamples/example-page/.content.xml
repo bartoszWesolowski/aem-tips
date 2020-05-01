@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-05-01T20:20:21.435+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Example page"
+        sling:resourceType="aemexamples/components/page">
+        <root
+            jcr:lastModified="{Date}2020-05-01T20:04:20.438+02:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2020-05-01T20:09:07.844+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-05-01T20:14:47.892+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <text
+                    jcr:created="{Date}2020-05-01T20:13:10.539+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-01T20:13:21.637+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/text"
+                    text="&lt;p>Component added in initial content&lt;/p>&#xa;"
+                    textIsRich="true"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

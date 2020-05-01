@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2020-05-01T20:15:27.993+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="aemexamples/components/page">
+        <root
+            jcr:lastModified="{Date}2020-05-01T20:04:20.438+02:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:created="{Date}2020-05-01T20:09:07.844+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-05-01T20:13:52.315+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true"/>
+            <responsivegrid_1958287619
+                jcr:created="{Date}2020-05-01T20:14:11.571+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-05-01T20:14:11.571+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+                <text
+                    jcr:created="{Date}2020-05-01T20:15:17.235+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-01T20:15:27.991+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/text"
+                    text="&lt;p>Added on template level&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                    textIsRich="true"/>
+            </responsivegrid_1958287619>
+            <text
+                jcr:created="{Date}2020-05-01T20:09:32.187+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-05-01T20:09:53.837+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/text"
+                text="&lt;p>Component added on template level&lt;/p>&#xa;"
+                textIsRich="true"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}768"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

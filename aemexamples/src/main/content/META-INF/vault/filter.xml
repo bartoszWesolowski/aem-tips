@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/aemexamples"/>
+    <filter root="/conf/aemexamples"/>
+    <filter root="/content/aemexamples"/>
 </workspaceFilter>
