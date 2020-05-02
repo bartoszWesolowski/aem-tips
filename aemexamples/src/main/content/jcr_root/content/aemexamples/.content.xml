@@ -8,4 +8,5 @@
         jcr:title="AEM examples "
         sling:resourceType="aemexamples/components/page"/>
     <example-page/>
+    <aem-examples/>
 </jcr:root>

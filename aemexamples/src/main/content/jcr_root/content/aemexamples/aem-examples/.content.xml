@@ -2,8 +2,11 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2020-05-02T16:22:46.216+02:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
         jcr:primaryType="cq:PageContent"
+        jcr:title="AEM Examples"
         sling:resourceType="aemexamples/components/page">
         <root
             jcr:primaryType="nt:unstructured"
@@ -17,7 +20,21 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="foundation/components/text"
                     text="&lt;p>Added on template level&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
-                    textIsRich="true"/>
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="6"/>
+                    </cq:responsive>
+                </text>
+                <htlexamplescomponent
+                    jcr:created="{Date}2020-05-02T16:22:46.215+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-02T16:22:46.215+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/htlExamplesComponent"/>
             </responsivegrid_1958287619>
         </root>
     </jcr:content>

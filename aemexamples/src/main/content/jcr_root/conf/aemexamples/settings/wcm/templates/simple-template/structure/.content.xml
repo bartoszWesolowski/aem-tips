@@ -3,6 +3,8 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2020-05-02T16:20:44.861+02:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="aemexamples/components/page">
@@ -10,23 +12,30 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <responsivegrid
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid"
-                editable="{Boolean}true"/>
-            <responsivegrid_1958287619
+                jcr:lastModified="{Date}2020-05-02T16:19:43.277+02:00"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
                 <text
+                    jcr:lastModified="{Date}2020-05-02T16:20:37.445+02:00"
+                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="foundation/components/text"
-                    text="&lt;p>Added on template level&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                    text="&lt;p>Header&lt;/p>&#xa;"
                     textIsRich="true"/>
+            </responsivegrid>
+            <responsivegrid_1958287619
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
             </responsivegrid_1958287619>
             <text
+                jcr:lastModified="{Date}2020-05-02T16:20:44.859+02:00"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/text"
-                text="&lt;p>Component added on template level&lt;/p>&#xa;"
+                text="&lt;p>Footer&lt;/p>&#xa;"
                 textIsRich="true"/>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
