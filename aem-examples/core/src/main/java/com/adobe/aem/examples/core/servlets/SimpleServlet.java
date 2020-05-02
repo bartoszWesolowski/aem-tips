@@ -28,6 +28,7 @@ import org.osgi.service.component.propertytypes.ServiceDescription;
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import java.io.IOException;
+import org.osgi.service.metatype.annotations.Designate;
 
 /**
  * Servlet that writes some sample content into the response. It is mounted for
@@ -39,7 +40,10 @@ import java.io.IOException;
            property={
                    "sling.servlet.methods=" + HttpConstants.METHOD_GET,
                    "sling.servlet.resourceTypes="+ "aem-examples/components/structure/page",
-                   "sling.servlet.extensions=" + "txt"
+               "sling.servlet.extensions=" + "txt",
+               "sling.servlet.selectors=" + "a",
+               "sling.servlet.selectors=" + "b",
+               "sling.servlet.selectors=" + "c"
            })
 @ServiceDescription("Simple Demo Servlet")
 public class SimpleServlet extends SlingSafeMethodsServlet {
