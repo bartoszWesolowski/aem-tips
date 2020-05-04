@@ -1,0 +1,17 @@
+<sly data-sly-test.isEditMode="${wcmmode.edit}"/>
+<sly data-sly-test.hiddenClass="${isEditMode ? ' ' : ' hidden '}"/>
+<div class="text-question">
+  <div class="question-content">
+    <p data-sly-test="${isEditMode}">(Question content)</p>
+    <sly data-sly-include="question.html" />
+  </div>
+
+  <div class="answer-content ${hiddenClass}">
+    <p data-sly-test="${isEditMode}">(Answer content)</p>
+    <sly data-sly-include="answer.html" />
+  </div>
+
+  <div class="question-actions">
+    <sly data-sly-include="actionButtons.html" />
+  </div>
+</div>

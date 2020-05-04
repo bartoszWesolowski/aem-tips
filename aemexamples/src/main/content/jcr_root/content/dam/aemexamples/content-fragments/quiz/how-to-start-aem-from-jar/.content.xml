@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        cq:name="how-to-start-aem-from-jar"
+        cq:parentPath="/content/dam/aemexamples/content-fragments/quiz"
+        jcr:description=""
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="How to start AEM from jar"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-05-04T18:33:06.507+02:00">
+        <data
+            cq:model="/conf/aemexamples/settings/dam/cfm/models/text-quiz-question"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                answer="&lt;p>java - jar unpack cq-quickstart.jar&amp;nbsp;&lt;/p>&#xa;&lt;p>cd crx-quickstart/bin&lt;/p>&#xa;&lt;p>start.bat/ sh start&lt;/p>&#xa;&lt;p>For publish a run mode publish must be added, for example &lt;b>java -jar cq-quickstart.jar -r publish&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/b>&lt;/p>&#xa;"
+                question="&lt;p>How to set up locall development enviroment from only cq quickstart jar and license file ?&lt;/p>&#xa;"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

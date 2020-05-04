@@ -2,6 +2,8 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2020-05-04T19:33:36.087+02:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
         jcr:primaryType="cq:PageContent"
         jcr:title="Quiz"
@@ -12,29 +14,69 @@
             <responsivegrid_1958287619
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys/parsys">
+                    <textquestion
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                        <question
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/text"
+                            text="&lt;p>Question&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p>&#xa;"
+                            textIsRich="true"/>
+                        <answer
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="foundation/components/text"
+                            text="&lt;p>Answer&lt;/p>&#xa;"
+                            textIsRich="true"/>
+                    </textquestion>
+                </items>
                 <quiz
                     jcr:primaryType="nt:unstructured"
                     sling:reourceType="aemexamples/components/quiz"
-                    sling:resourceType="aemexamples/components/quiz">
-                    <items
+                    sling:resourceType="aemexamples/components/quiz"/>
+                <text
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/text"
+                    text="&lt;p>&lt;b>Questions related to AEM local installation and example configuration&lt;/b>, including:&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>starting local instance, both author and publish&lt;/li>&#xa;&lt;li>configuring run modes&lt;/li>&#xa;&lt;li>using OOTB scripts&lt;/li>&#xa;&lt;li>custom logging configurations&lt;/li>&#xa;&lt;/ul>&#xa;"
+                    textIsRich="true"/>
+                <textquestion
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="wcm/foundation/components/parsys/parsys">
-                        <textquestion
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="aemexamples/components/quiz/question/textQuestion">
-                            <question
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="foundation/components/text"
-                                text="&lt;p>Question&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p>&#xa;"
-                                textIsRich="true"/>
-                            <answer
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="foundation/components/text"
-                                text="&lt;p>Answer&lt;/p>&#xa;"
-                                textIsRich="true"/>
-                        </textquestion>
-                    </items>
-                </quiz>
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What needs to be done to run local AEM instance in debug mode on port 24502 ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Parameter&amp;nbsp; &lt;b>-agentlib:jdwp=transport=dt_socket,address=24502,server=y,suspend=n &lt;/b>needs to be added to command that statrs the instance. This can be done:&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>directly in commnad line, if AEM is started with custom command&lt;/li>&#xa;&lt;li>by adding this param to &lt;b>CQ_JVM_OPTS&amp;nbsp;&lt;/b>&amp;nbsp;system variable if AEM is started with start script from&lt;b> /crx-quickstart/bin&lt;/b>&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                </textquestion>
+                <textquestion_1575468720
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Where AEM start/stop scripts can be found ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Under /crx-quickstart/bin directory (created on instance first startup)&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1575468720>
+                <contentfragmenttextq
+                    jcr:created="{Date}2020-05-04T19:33:26.912+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-04T19:33:36.083+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/contentFragmentTextQuestion"
+                    contentFragmentPath="/content/dam/aemexamples/content-fragments/quiz/how-to-start-aem-from-jar"/>
             </responsivegrid_1958287619>
         </root>
     </jcr:content>

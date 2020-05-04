@@ -6,10 +6,12 @@
             <components jcr:primaryType="nt:unstructured">
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <policy_471224627096200
+                        jcr:lastModified="{Date}2020-05-04T19:25:47.008+02:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Main content "
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/list,/libs/wcm/foundation/components/text,group:AEM examples,/libs/wcm/foundation/components/parsys/colctrl,/apps/weretail/components/content/carousel,/apps/weretail/components/content/list,/apps/weretail/components/content/tabs]">
+                        components="[/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/list,/libs/wcm/foundation/components/text,group:AEM examples,group:AEM examples - Quiz Question,/libs/wcm/foundation/components/parsys/colctrl,/apps/weretail/components/content/carousel,/apps/weretail/components/content/list,/apps/weretail/components/content/tabs]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </policy_471224627096200>
                 </responsivegrid>

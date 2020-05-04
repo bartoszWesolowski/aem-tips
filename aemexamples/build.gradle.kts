@@ -63,8 +63,8 @@ aem {
     tasks {
         jar {
             bundle {
-                exportPackage("com.aemexampless.aem.htl.*")
-                slingModelPackages = "com.aemexampless.aem.htl"
+                exportPackage("com.aemexampless.aem.*")
+                slingModelPackages = "com.aemexampless.aem"
             }
         }
     }

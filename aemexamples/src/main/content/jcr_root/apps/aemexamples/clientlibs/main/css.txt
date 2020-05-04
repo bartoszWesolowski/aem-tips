@@ -1,2 +1,2 @@
 #base=css
-quiz/text-question.css
+quiz/text-question.less

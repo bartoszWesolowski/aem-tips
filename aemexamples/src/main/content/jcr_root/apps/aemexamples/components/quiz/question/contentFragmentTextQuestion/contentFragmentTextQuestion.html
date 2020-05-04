@@ -1,0 +1,7 @@
+<sly data-sly-use.model="com.aemexampless.aem.components.quiz.ContentFragmentTextQuestionComponentModel"
+    data-sly-test.isConfigured="${model.isConfigured}"
+    data-sly-include="textQuestionBase.html" />
+
+<div data-sly-test="${!isConfigured && wcmmode.edit}">
+  <p>${component.title} - please edit</p>
+</div>
