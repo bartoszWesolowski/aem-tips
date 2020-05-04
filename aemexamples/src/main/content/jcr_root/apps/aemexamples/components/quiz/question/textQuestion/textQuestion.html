@@ -1,0 +1,17 @@
+<h1>${component.title}</h1>
+<sly data-sly-test.isEditMode="${wcmmode.edit}"/>
+<sly data-sly-test.hiddenClass="${isEditMode ? ' ' : ' hidden '}"/>
+<p data-sly-test="${isEditMode}">(Question content)</p>
+<div class="question-content">
+  <sly data-sly-resource="${'question' @ resourceType='foundation/components/text'}"/>
+</div>
+
+<p data-sly-test="${isEditMode}">(Answer content)</p>
+<div class="answer-content ${hiddenClass}">
+  <sly data-sly-resource="${'answer' @ resourceType='foundation/components/text'}"/>
+</div>
+
+<div class="question-actions">
+  <button class="show-answer ">Show answer</button>
+  <button class="hide-answer ${hiddenClass}">Hide answer</button>
+</div>

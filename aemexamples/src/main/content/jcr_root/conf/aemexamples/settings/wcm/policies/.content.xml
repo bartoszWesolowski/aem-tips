@@ -1,3 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
-    jcr:primaryType="cq:Page"/>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <policy_471224627096200
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Main content "
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/list,/libs/wcm/foundation/components/text,group:AEM examples,/libs/wcm/foundation/components/parsys/colctrl,/apps/weretail/components/content/carousel,/apps/weretail/components/content/list,/apps/weretail/components/content/tabs]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_471224627096200>
+                </responsivegrid>
+                <image jcr:primaryType="nt:unstructured"/>
+                <text jcr:primaryType="nt:unstructured"/>
+                <parsys jcr:primaryType="nt:unstructured">
+                    <colctrl jcr:primaryType="nt:unstructured"/>
+                </parsys>
+            </components>
+        </foundation>
+    </wcm>
+    <aemexamples jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <page jcr:primaryType="nt:unstructured"/>
+            <quiz jcr:primaryType="nt:unstructured">
+                <policy_1588585413933
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Quiz policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="group:AEM examples - Quiz Question">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1588585413933>
+            </quiz>
+        </components>
+    </aemexamples>
+    <weretail jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <content jcr:primaryType="nt:unstructured">
+                <tabs jcr:primaryType="nt:unstructured"/>
+            </content>
+        </components>
+    </weretail>
+</jcr:root>

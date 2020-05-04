@@ -1,0 +1,16 @@
+.hidden {
+  display: none;
+}
+
+.textQuestion {
+  border: ridge;
+  background-color: #f4f4f4;
+}
+
+.textQuestion .question-content {
+  border-bottom: solid 1px;
+}
+.textQuestion .question-answer {
+  padding-left: 10px;
+  background-color: lightgrey;
+}

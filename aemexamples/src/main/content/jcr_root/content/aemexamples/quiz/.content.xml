@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Quiz"
+        sling:resourceType="aemexamples/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid_1958287619
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <quiz
+                    jcr:primaryType="nt:unstructured"
+                    sling:reourceType="aemexamples/components/quiz"
+                    sling:resourceType="aemexamples/components/quiz">
+                    <items
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/parsys/parsys">
+                        <textquestion
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                            <question
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/text"
+                                text="&lt;p>Question&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p>&#xa;"
+                                textIsRich="true"/>
+                            <answer
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="foundation/components/text"
+                                text="&lt;p>Answer&lt;/p>&#xa;"
+                                textIsRich="true"/>
+                        </textquestion>
+                    </items>
+                </quiz>
+            </responsivegrid_1958287619>
+        </root>
+    </jcr:content>
+</jcr:root>

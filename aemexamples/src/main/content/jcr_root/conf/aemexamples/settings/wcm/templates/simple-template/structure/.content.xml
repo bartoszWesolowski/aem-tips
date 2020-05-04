@@ -3,8 +3,6 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
-        cq:lastModified="{Date}2020-05-02T16:20:44.861+02:00"
-        cq:lastModifiedBy="admin"
         cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="aemexamples/components/page">
@@ -12,13 +10,9 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <responsivegrid
-                jcr:lastModified="{Date}2020-05-02T16:19:43.277+02:00"
-                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
                 <text
-                    jcr:lastModified="{Date}2020-05-02T16:20:37.445+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="foundation/components/text"
                     text="&lt;p>Header&lt;/p>&#xa;"
@@ -27,12 +21,8 @@
             <responsivegrid_1958287619
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid"
-                editable="{Boolean}true">
-                <cq:responsive jcr:primaryType="nt:unstructured"/>
-            </responsivegrid_1958287619>
+                editable="{Boolean}true"/>
             <text
-                jcr:lastModified="{Date}2020-05-02T16:20:44.859+02:00"
-                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="foundation/components/text"
                 text="&lt;p>Footer&lt;/p>&#xa;"

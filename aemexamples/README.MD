@@ -13,3 +13,7 @@ To build CRX package and deploy it on AEM instance, simply run command:
 ```bash
 sh gradlew
 ```
+
+
+## Cleaning content
+gradlew packageSync -Ppackage.sync.mode=clean_only

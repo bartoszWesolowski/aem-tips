@@ -9,4 +9,5 @@
         sling:resourceType="aemexamples/components/page"/>
     <example-page/>
     <aem-examples/>
+    <quiz/>
 </jcr:root>
