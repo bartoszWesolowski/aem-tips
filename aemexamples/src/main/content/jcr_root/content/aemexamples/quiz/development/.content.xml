@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-05-06T22:08:17.089+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Development"
+        sling:resourceType="aemexamples/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid_1958287619
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <text
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/text"
+                    text="&lt;p>Added on template level&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                    textIsRich="true"/>
+                <textquestion
+                    jcr:created="{Date}2020-05-06T22:07:57.235+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-06T22:07:57.235+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-06T22:08:02.684+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What is the location of scripts that handles error responses ? How to write custom error handler ?&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-06T22:08:17.086+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Default error handlers are located under&amp;nbsp;&lt;b>/libs/sling/servlet/errorhandler&lt;/b>&lt;/p>&#xa;&lt;p>To write custom error handler this location needs to be created under /apps. The default script is default.jsp.&amp;nbsp;&lt;/p>&#xa;&lt;p>To implement 404 response handler an 404.jsp needs to be created under apps errorhandler directory.&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion>
+            </responsivegrid_1958287619>
+        </root>
+    </jcr:content>
+</jcr:root>

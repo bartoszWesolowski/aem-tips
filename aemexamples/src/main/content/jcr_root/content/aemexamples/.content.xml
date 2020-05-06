@@ -10,4 +10,6 @@
     <example-page/>
     <aem-examples/>
     <quiz/>
+    <error-handler-examples/>
+    <error-handler-examples0/>
 </jcr:root>

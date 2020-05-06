@@ -1,0 +1,4 @@
+<sly data-sly-use.model="${'com.aemexampless.aem.components.errorhandler.ThrowExceptionComponent' @isEditMode=wcmmode.edit}"/>
+<h1>When called with ?wcmmode=disabled (or on publish) will throw custom exception that will be handled by custom error handler.</h1>
+<h2>Status returned: ${model.statusCode || 200}</h2>
+<a href="${resource.path @ extension='html'}">Click this link to see the</a>
