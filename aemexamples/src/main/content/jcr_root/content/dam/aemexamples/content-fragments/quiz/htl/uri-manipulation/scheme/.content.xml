@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        cq:name="scheme"
+        cq:parentPath="/content/dam/aemexamples/content-fragments/quiz/htl/uri-manipulation"
+        jcr:description=""
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="scheme"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-05-05T09:17:15.527+02:00">
+        <data
+            cq:model="/conf/aemexamples/settings/dam/cfm/models/text-quiz-question"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                answer="&lt;ul>&#xa;&lt;li>http://example.com/path/page.html&lt;/li>&#xa;&lt;li>https://example.com/path/page.html&amp;nbsp;&lt;/li>&#xa;&lt;/ul>&#xa;&lt;div>Empty scheme:&lt;/div>&#xa;&lt;ul>&#xa;&lt;li>http://example.com/path/page.html&lt;/li>&#xa;&lt;li>http://example.com/path/page.html&lt;/li>&#xa;&lt;/ul>&#xa;&lt;p>Empty scheme &lt;b>will not&lt;/b> affect the resultng URL&lt;/p>&#xa;"
+                question="&lt;p>What will be the format of:&amp;nbsp;&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>${'//example.com/path/page.html' @ scheme='http'}&lt;/li>&#xa;&lt;li>${'http://example.com/path/page.html' @ scheme='https'}&lt;/li>&#xa;&lt;/ul>&#xa;&lt;div>Empty scheme:&lt;/div>&#xa;&lt;ul>&#xa;&lt;li>${'http://example.com/path/page.html' @ scheme=''}&lt;/li>&#xa;&lt;li>${'http://example.com/path/page.html' @ scheme}&lt;br>&#xa;&amp;lt;!-- outputs:&amp;nbsp; --&amp;gt;&lt;/li>&#xa;&lt;/ul>&#xa;"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

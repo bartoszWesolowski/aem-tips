@@ -2,8 +2,6 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2020-05-04T19:33:36.087+02:00"
-        cq:lastModifiedBy="admin"
         cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
         jcr:primaryType="cq:PageContent"
         jcr:title="Quiz"
@@ -70,14 +68,193 @@
                         textIsRich="true"/>
                 </textquestion_1575468720>
                 <contentfragmenttextq
-                    jcr:created="{Date}2020-05-04T19:33:26.912+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-04T19:33:36.083+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/contentFragmentTextQuestion"
                     contentFragmentPath="/content/dam/aemexamples/content-fragments/quiz/how-to-start-aem-from-jar"/>
+                <textquestion_276928001
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>If AEM was started with command:&amp;nbsp;java -Xmx1024M -jar cq-quickstart-6.4.0.jar - which port and run mode will be used ?&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>By default it will start author on port 4502&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_276928001>
+                <textquestion_39213381
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What is the format cq quickstart file nam that allows to set up AEM instance type (author/publish) and port ?&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Template: cq-&amp;lt;instance-type&amp;gt;-p&amp;lt;port-number&amp;gt;.jar&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>cq-author-p4502.jar - author on port 4502&lt;/li>&#xa;&lt;li>cq-publish-p4503.jar - publish on port 4503&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_39213381>
+                <textquestion_894086303
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Which system variable needs to be set to configure AEM run modes ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>CQ_RUNMODE&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_894086303>
+                <textquestion_1253060222
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Where in the OSGi web console instance runmodes can be chcecked ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>/system/console/status-slingsettings&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1253060222>
+                <textquestion_1618944082
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What instance will be started if the following command was used:&lt;/p>&#xa;&lt;p>java -jar -Xmx1024M cq-author-p4502.jar -r publish -p 4503&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>It will start publish on port 4503 - &lt;b>command line parameters takes precedence over file naming&lt;/b>&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1618944082>
+                <textquestion_1131858276
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>How to write .config file for a service with PID&amp;nbsp;org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl and properties:&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>resource.resolver.required.providernames - array with single value JCR&lt;/li>&#xa;&lt;li>resource.resolver.optimize.alias.resolution - boolean true&lt;/li>&#xa;&lt;li>resource.resolver.vanitypath.maxEntries - number, -1&lt;/li>&#xa;&lt;li>resource.resolver.vanitypath.name - &amp;quot;JCR name&amp;quot; - String&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Primary type: nt:file&lt;/p>&#xa;&lt;p>Name: PID.config -&amp;gt;&amp;nbsp;resource.resolver.vanitypath.maxEntries=I&amp;quot;-1&amp;quot;.config&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>resource.resolver.required.providernames=[&amp;quot;JCR&amp;quot;]&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>resource.resolver.optimize.alias.resolution=B&amp;quot;true&amp;quot;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>resource.resolver.vanitypath.maxEntries=I&amp;quot;-1&amp;quot;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>resource.resolver.vanitypath.name=T&amp;quot;JCR name&amp;quot;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1131858276>
+                <textquestion_1032499499
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What is the type of config node that can be stroed in source control repository ? What should be name of parent folder fot such configuration?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Primary type:&amp;nbsp;&lt;b>sling:OsgiConfig&lt;/b>&lt;/p>&#xa;&lt;p>Has to be stored under node that is named &lt;b>config&lt;/b> or config.&amp;lt;run_modes&amp;gt; with primary type sling&lt;b>:folder&lt;/b>&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1032499499>
+                <textquestion_1409779043
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>There are two configuration for an osgi service: one under /libs and one under /apps - which one will be used ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>The one from apps will be used&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1409779043>
+                <textquestion_1208388176
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Where a bundle jar should be placed so AEM would pick it up automatically and install it ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>&amp;lt;cq-install-dir&amp;gt;&lt;b>crx-quickstart/install&lt;/b>&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1208388176>
+                <textquestion_967225274
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>In what form AEM stores configurations saved via Web Console ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>They are stored with .config files&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_967225274>
+                <textquestion_2070201452
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What is the order of config resolution at Runtime ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Changes made in web console takes precedence. Then config under /apps then config under /libs&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_2070201452>
+                <textquestion_552201634
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>How AEM resolves configuration with for different run modes ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>A configuration will be taken into account if its parent folder have all of the run modes that are present on the instance. In case there are more configs for the same PID then the one that have most matching run modes will be applied.&amp;nbsp;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;p>If any of the runmodes in the directory is not present on current instance run modes list then this directory will be ignored for config resolution.&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_552201634>
+                <textquestion_1730765248
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Where in the file system AEM stores configs edited by admin ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>/crx-quickstart/launchpad/config&lt;/p>&#xa;&lt;p>This should be &lt;b>never &lt;/b>edited manually - but should be included in backups&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1730765248>
             </responsivegrid_1958287619>
         </root>
     </jcr:content>
+    <htl-questions/>
 </jcr:root>

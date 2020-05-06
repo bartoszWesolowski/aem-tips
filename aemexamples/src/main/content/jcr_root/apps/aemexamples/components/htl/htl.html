@@ -1,0 +1,69 @@
+<sly data-sly-test.myFunctionName="${'test'}" />
+
+<a href="#whatever" onclick="${myFunctionName}">Link</a>
+
+<sly data-sly-test.var1="${false}" data-sly-test.var2="${'value'}" />
+
+<sly data-sly-test.var2="${'value'}" />
+
+<div attr-test="${var1 || var2}"> Test 1</div>
+
+<div attr-test="${var1 || true}">
+Test attr or
+</div>
+
+<sly data-sly-test.x="${'test-value'}"/>
+
+<!--/* The value of variable x is: ${x}*/-->
+${x}
+
+<sly data-sly-test.x="${'test-value'}"/>
+<!-- The value of variable x is: ${x}  -->
+
+
+<sly data-sly-test.result="${'h22' @ context='elementName'}" />
+
+<p data-sly-element="${result}">Result: ${result}</p>
+
+<h2>Selectors</h2>
+${'path/page.woo.foo.html' @ selectors=['a', 'b'], addSelectors=['c']}
+<h2>Extemsion</h2>
+${'path/page.woo.foo.html' @ extension=''}
+<h3>Suffix</h3>
+
+<sly data-sly-use.queryJs="query.js"/>
+    ${xtz.query}
+${'http://www.example.org/search?x=next' @ query=queryJs.query, addQuery=queryJs.addQuery, removeQuery=['s', 'q'], context='uri'}
+
+<h1>Directives</h1>
+<sly data-sly-use="${'com.aemexampless.aem.htl.NavModel' @ depth='depth value', isVisible=!wcmmode.edit}" />
+${useBean.depth}
+
+<h2>data-sly-attribute</h2>
+<div data-sly-attribute="${useBean.properties}">
+    Attrs added via map
+</div>
+
+<h2>data-sly-element</h2>
+<div data-sly-element="p">This was a div but changed to p</div>
+<p data-sly-element="xtz">This was a div but it was not changed cause invalid element passed</p>
+
+<h2>data-sly-test</h2>
+<div data-sly-test.v1="${'value-1'}" data-sly-test.v4="${true}"data-sly-test.v3="${'new value'}"  data-sly-test.v2="${''}" >
+<p>Div content in sly test</p>
+</div>
+V1: ${v1}
+V2: ${v2}
+V3: ${v3}
+V4: ${v4}
+
+
+<h2>data-sly-list</h2>
+<ul data-sly-list="${useBean.list @ begin = 1, end = 3}">
+    <li>${item}</li>
+</ul>
+
+<ul>
+     <li data-sly-repeat="${useBean.list @ begin = 1, end = 3}">${item}</li>
+</ul>
+dsad

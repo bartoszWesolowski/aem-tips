@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        cq:name="path"
+        cq:parentPath="/content/dam/aemexamples/content-fragments/quiz/htl/uri-manipulation"
+        jcr:description=""
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="path"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-05-05T09:26:45.791+02:00">
+        <data
+            cq:model="/conf/aemexamples/settings/dam/cfm/models/text-quiz-question"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                answer="&lt;ol>&#xa;&lt;li>one/two&lt;/li>&#xa;&lt;li>/one/two/ - all additional not required slashes are &lt;b>removed&lt;/b>&lt;/li>&#xa;&lt;li>../path&amp;nbsp;&lt;/li>&#xa;&lt;li>/path/&lt;/li>&#xa;&lt;li>http://example.com/foo/path/page.html&lt;/li>&#xa;&lt;li>path/page/appended.selector.html/suffix?key=value#fragment&lt;/li>&#xa;&lt;li>http://example.com/that/two.selector.html/suffix?key=value#fragment - &lt;b>path&lt;/b>&amp;nbsp;param will &lt;b>replace&lt;/b>&amp;nbsp;the existing URL path&lt;/li>&#xa;&lt;li>http://example.com/this/one.selector.html/suffix?key=value#fragment - &lt;b>empty path will not change the URL&lt;/b>&lt;/li>&#xa;&lt;li>http://example.com/this/one.selector.html/suffix?key=value#fragment - same as above example&lt;/li>&#xa;&lt;/ol>&#xa;"
+                question="&lt;ol>&#xa;&lt;li>${'one' @ appendPath='two'}&lt;/li>&#xa;&lt;li>${'/one/' @ appendPath='/two/'}&lt;/li>&#xa;&lt;li>${'path' @ prependPath='..'}&lt;/li>&#xa;&lt;li>${'path' @ prependPath='/', appendPath='/'}&lt;/li>&#xa;&lt;li>${'http://example.com/path/page.html' @ prependPath='foo'}&lt;/li>&#xa;&lt;li>${'path/page.selector.html/suffix?key=value#fragment' @ appendPath='appended'}&lt;/li>&#xa;&lt;li>${'http://example.com/this/one.selector.html/suffix?key=value#fragment' @ path='that/two'}&lt;/li>&#xa;&lt;li>${'http://example.com/this/one.selector.html/suffix?key=value#fragment' @ &lt;b>path=''&lt;/b>}&lt;/li>&#xa;&lt;li>${'http://example.com/this/one.selector.html/suffix?key=value#fragment' @ &lt;b>path&lt;/b>}&lt;br>&#xa;&amp;lt;!-- outputs:&amp;nbsp; --&amp;gt;&lt;/li>&#xa;&lt;/ol>&#xa;"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

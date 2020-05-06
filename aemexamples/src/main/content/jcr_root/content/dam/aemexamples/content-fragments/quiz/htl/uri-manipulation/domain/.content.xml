@@ -3,21 +3,21 @@
     jcr:mixinTypes="[mix:referenceable]"
     jcr:primaryType="dam:Asset">
     <jcr:content
-        cq:name="how-to-start-aem-from-jar"
-        cq:parentPath="/content/dam/aemexamples/content-fragments/quiz"
+        cq:name="domain"
+        cq:parentPath="/content/dam/aemexamples/content-fragments/quiz/htl/uri-manipulation"
         jcr:description=""
         jcr:primaryType="dam:AssetContent"
-        jcr:title="How to start AEM from jar"
+        jcr:title="Domain"
         contentFragment="{Boolean}true"
-        lastFragmentSave="{Date}2020-05-05T14:53:38.419+02:00">
+        lastFragmentSave="{Date}2020-05-05T09:20:40.818+02:00">
         <data
             cq:model="/conf/aemexamples/settings/dam/cfm/models/text-quiz-question"
             jcr:primaryType="nt:unstructured">
             <master
                 jcr:mixinTypes="[cq:Taggable]"
                 jcr:primaryType="nt:unstructured"
-                answer="&lt;p>java - jar unpack cq-quickstart.jar&amp;nbsp;&lt;/p>&#xa;&lt;p>cd crx-quickstart/bin&lt;/p>&#xa;&lt;p>start.bat/ sh start&lt;/p>&#xa;&lt;p>For publish a run mode publish must be added, for example &lt;b>java -jar cq-quickstart.jar -r publish&amp;nbsp; &lt;/b>&lt;/p>&#xa;&lt;p>or by adding the run mode to&amp;nbsp;&lt;b>&amp;nbsp;CQ_RUNMODE &lt;/b>system variable&lt;/p>&#xa;"
-                question="&lt;p>How to set up locall development enviroment from only cq quickstart jar and license file ?&lt;/p>&#xa;"/>
+                answer="&lt;p>Allows &lt;b>adding or replacing &lt;/b>the host and port (domain) part for a URI&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>//example.org/path/page.html&lt;/li>&#xa;&lt;li>http://example.org/path/page.html&amp;nbsp;&lt;/li>&#xa;&lt;li>http://www.example.org/path/page.html&lt;/li>&#xa;&lt;/ul>&#xa;"
+                question="&lt;ul>&#xa;&lt;li>${'///path/page.html' @ domain='example.org'}&lt;/li>&#xa;&lt;li>${'http:///path/page.html' @ domain='example.org'}&lt;/li>&#xa;&lt;li>${'http://www.example.com/path/page.html' @ domain='www.example.org'}&lt;br>&#xa;&lt;/li>&#xa;&lt;/ul>&#xa;"/>
         </data>
         <metadata
             jcr:mixinTypes="[cq:Taggable]"

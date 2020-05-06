@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="HTL questions"
+        sling:resourceType="aemexamples/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid_1958287619
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <text
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/text"
+                    text="&lt;p>&lt;b>Set of questions to help learning the HTL.&lt;/b>&lt;/p>&#xa;"
+                    textIsRich="true"/>
+                <textquestion
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What will be the result of the following HTL script template, where :&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;sly data-sly-test.myFunctionName=&amp;quot;${'test'}&amp;quot; /&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;a href=&amp;quot;#whatever&amp;quot; onclick=&amp;quot;${myFunctionName @ context='scriptToken'}()&amp;quot;&amp;gt;Link&amp;lt;/a&amp;gt;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>For script ans styles context the&amp;nbsp;&lt;b style=&quot;font-style: italic;&quot;>scriptToken &lt;/b>context is required to render the value of the expression. In this case the result will be:&amp;nbsp;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;a href=&amp;quot;#whatever&amp;quot; onclick=&amp;quot;test()&amp;quot;&amp;gt;Link&amp;lt;/a&amp;gt;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion>
+                <textquestion_copy
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What will be the result of the following HTL script template, where :&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;sly data-sly-test.myFunctionName=&amp;quot;${'test'}&amp;quot; /&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;a href=&amp;quot;#whatever&amp;quot; onclick=&amp;quot;${myFunctionName}()&amp;quot;&amp;gt;Link&amp;lt;/a&amp;gt;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>For &lt;b>script &lt;/b>ans &lt;b>styles &lt;/b>context the&amp;nbsp;&lt;b style=&quot;font-style: italic;&quot;>scriptToken &lt;/b>context is required to render the value of the expression. In this case the result will be:&amp;nbsp;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;a href=&amp;quot;#whatever&amp;quot;&amp;gt;Link&amp;lt;/a&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;nbsp;&lt;b>Note that the attribute was removed (this is the case if the value was an expression that evaluated to empty value (or null)&lt;/b>&lt;/p>&#xa;&lt;p>Other examples where scriptToken context is reuqired:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;script&amp;gt;var bar='${someText @ context=&amp;quot;scriptString&amp;quot;}';&amp;lt;/script&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;a href=&amp;quot;#whatever&amp;quot; style=&amp;quot;color: ${colorName @ context='styleToken'};&amp;quot;&amp;gt;Link&amp;lt;/a&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;style&amp;gt;&lt;br>&#xa;a.${className @ context=&amp;quot;styleToken&amp;quot;} {&lt;br>&#xa;font-family: '${fontFamily @ context=&amp;quot;styleString&amp;quot;}', sans-serif;&lt;br>&#xa;color: #${colorHashValue @ context=&amp;quot;styleToken&amp;quot;};&lt;br>&#xa;margin-${side @ context=&amp;quot;styleToken&amp;quot;}: 1em; /* E.g. for bi-directional text */&lt;br>&#xa;}&lt;br>&#xa;&amp;lt;/style&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;nbsp;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_copy>
+                <textquestion_274298058
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What will be rendered for the following snippter:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;sly data-sly-test.var1=&amp;quot;${false}&amp;quot; data-sly-test.var2=&amp;quot;${'value'}&amp;quot; /&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;sly data-sly-test.var2=&amp;quot;${'value'}&amp;quot; /&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;div attr-test=&amp;quot;${var1 || var2}&amp;quot;&amp;gt; Test 1&amp;lt;/div&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;div attr-test=&amp;quot;${var1 || true}&amp;quot;&amp;gt;Test 2&amp;lt;/div&amp;gt;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>&amp;lt;div attr-test=&amp;quot;value&amp;quot;&amp;gt; Test 1&amp;lt;/div&amp;gt;&lt;/p>&#xa;&lt;p>&amp;lt;div attr-test=&amp;quot;&amp;quot;&amp;gt;Test2&amp;lt;/div&amp;gt;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_274298058>
+                <textquestion_1771944579
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What will be the value of:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;p&amp;gt;${[1, 2, 3]}&amp;lt;/p&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;p&amp;gt;${['foo', 'bar']}&amp;lt;/p&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;p&amp;gt;${['foo', '']}&amp;lt;/p&amp;gt;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>&amp;lt;p&amp;gt;1,2,3&amp;lt;/p&amp;gt;&lt;/p>&#xa;&lt;p>&amp;lt;p&amp;gt;foo,bar&amp;lt;/p&amp;gt;&lt;/p>&#xa;&lt;p>&amp;lt;p&amp;gt;foo,&amp;lt;/p&amp;gt;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1771944579>
+                <textquestion_366433155
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What will be rendered for:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;sly data-sly-test.x=&amp;quot;${'test-value'}&amp;quot;/&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;!--/* The value of variable x is: ${x}*/--&amp;gt;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Nothing will be rendered as this is an HTL comment&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_366433155>
+                <textquestion_164718256
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Will HTL render an HTML comment like:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;!-- Page title: ${currentPage.jcr:title} --&amp;gt;&lt;/p>&#xa;&lt;p>? Will the expression be evaluated ?&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>HTML comments are evaluated and rendered (&lt;b>variables are evaluated, block statements are not&lt;/b>)&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_164718256>
+                <textquestion_1824322622
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What will be the result of the following:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;sly data-sly-test.result=&amp;quot;${'h22' @ context='elementName'}&amp;quot; /&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;p data-sly-element=&amp;quot;${result}&amp;quot;&amp;gt;Result: ${result}&amp;lt;/p&amp;gt;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>&amp;lt;p&amp;gt;Result: &amp;lt;/p&amp;gt;&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>In case the value passed to elementName context is not supported (or is not whitelisted for XSS) then the result will be an empty value.&amp;nbsp;&lt;/li>&#xa;&lt;li>data-sly-element will not change the element if the value passed as new elmenent name is not valid&lt;/li>&#xa;&lt;li>Note: using data-sly-element on &lt;b>sly &lt;/b>tag will &lt;b>not &lt;/b>work&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1824322622>
+                <textquestion_969988854
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What wil be the otuput of formatting for obj.number=3.14:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>${'#%' @ format=obj.number}&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>314%&amp;nbsp;&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>&amp;nbsp;&lt;b>%&lt;/b>&amp;nbsp;multiply by 100 and show as percentage&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_969988854>
+                <textquestion_783743085
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What will be the otput of:&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>${['one', 'two'] @ join='; '}&lt;/li>&#xa;&lt;li>${'test' @ join=', '}&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ul>&#xa;&lt;li>one, two&lt;/li>&#xa;&lt;li>test - &lt;b>if one element is used it will not be affected&lt;/b>&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_783743085>
+                <text_1563944635
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/text"
+                    text="&lt;p>&lt;b>Uri manipulation&lt;/b>&lt;/p>&#xa;"
+                    textIsRich="true"/>
+                <contentfragmenttextq
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/contentFragmentTextQuestion"
+                    contentFragmentPath="/content/dam/aemexamples/content-fragments/quiz/htl/uri-manipulation/scheme"/>
+                <contentfragmenttextq_766150365
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/contentFragmentTextQuestion"
+                    contentFragmentPath="/content/dam/aemexamples/content-fragments/quiz/htl/uri-manipulation/domain"/>
+                <contentfragmenttextq_700304442
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/contentFragmentTextQuestion"
+                    contentFragmentPath="/content/dam/aemexamples/content-fragments/quiz/htl/uri-manipulation/path"/>
+                <textquestion_1754062694
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;div>Selectors:&lt;/div>&#xa;&lt;ol>&#xa;&lt;li>${'path/page.woo.foo.html' @ selectors='foo.bar'}&lt;/li>&#xa;&lt;li>${'path/page.woo.foo.html' @ selectors=['foo', 'bar']}&lt;/li>&#xa;&lt;/ol>&#xa;&lt;div>Add selectors:&amp;nbsp;&lt;/div>&#xa;&lt;ol>&#xa;&lt;li>${'path/page.woo.foo.html' @ addSelectors='foo.bar'}&lt;/li>&#xa;&lt;li>${'path/page.woo.foo.html' @ addSelectors=['foo', 'bar']}&lt;/li>&#xa;&lt;/ol>&#xa;&lt;div>Remove selecotrs:&lt;/div>&#xa;&lt;ol>&#xa;&lt;li>${'path/page.woo.foo.html' @ removeSelectors='foo.bar'}&lt;/li>&#xa;&lt;li>${'path/page.woo.foo.html' @ removeSelectors=['foo', 'bar']}&lt;/li>&#xa;&lt;/ol>&#xa;&lt;div>Empty selectors:&lt;/div>&#xa;&lt;ol>&#xa;&lt;li>${'path/page.woo.foo.html' @ selectors}&lt;/li>&#xa;&lt;li>${'path/page.woo.foo.html' @ selectors=''}&lt;br>&#xa;&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Selectors:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>path/page.foo.bar.html&lt;/li>&#xa;&lt;li>path/page.foo.bar.html -&amp;nbsp;&lt;b>existing selectors will be overwritten&amp;nbsp;&lt;/b>&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>Add selectors:&amp;nbsp;&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>path/page.woo.foo.foo.bar.html&lt;/li>&#xa;&lt;li>path/page.woo.foo.foo.bar.html -&amp;nbsp;&lt;b>creates a set of selectors - duplicated ones are added only once&lt;/b>&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>Remove selecotrs:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>path/page.woo.html&lt;/li>&#xa;&lt;li>path/page.woo.html&amp;nbsp;&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>Empty selectors - if empty array of selectors passed&amp;nbsp;&lt;b>will remove all selectors&lt;/b>:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>path/page.html&amp;nbsp;&lt;/li>&#xa;&lt;li>path/page.html&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1754062694>
+                <textquestion_686098701
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Selectors mix:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>${'path/page.woo.foo.html' @ removeSelectors=['woo'], addSelectors=['woo']}&lt;/li>&#xa;&lt;li>${'path/page.woo.foo.html' @ selectors=['a', 'b'], addSelectors=['c']}&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ol>&#xa;&lt;li>path/page.foo.html - &lt;b>remove selectors is evaluated on whole set of selectors so all selectors added to this property will be always removed&lt;/b>&lt;/li>&#xa;&lt;li>path/page.a.b.c.html - add selctors works selectors statement&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_686098701>
+                <textquestion_712785444
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What will be the output of:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>${'path/page.selector.json/suffix' @ extension='html'}&lt;/li>&#xa;&lt;li>${'path/page.json?key=value' @ extension='html'}&lt;/li>&#xa;&lt;li>${'path/page.json#fragment' @ extension='html'}&lt;/li>&#xa;&lt;li>${'path/page.json' @ extension}&lt;/li>&#xa;&lt;li>${'path/page.json' @ extension=''}&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ol>&#xa;&lt;li>&amp;nbsp;path/page.selector.html/suffix&lt;/li>&#xa;&lt;li>path/page.html?key=value&lt;/li>&#xa;&lt;li>path/page.html#fragment&lt;/li>&#xa;&lt;li>&amp;nbsp;path/page&lt;/li>&#xa;&lt;li>path/page&amp;nbsp;&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>&lt;b>Empty extension remove it from the url&lt;/b>&lt;br>&#xa;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_712785444>
+                <htl
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/htl"/>
+                <textquestion_382769403
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Sufix is used to replace te existing one. Empty sufix parameter will &lt;b>remove &lt;/b>the suffix from URL.&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>path/page.html/my/suffix&lt;/li>&#xa;&lt;li>path/page.html/my/suffix&lt;/li>&#xa;&lt;li>path/page.html/prepended/suffix&lt;/li>&#xa;&lt;li>path/page.html/suffix/appended&lt;/li>&#xa;&lt;li>path/page.html -&amp;nbsp;&lt;b>empty suffix removes the one from the URL&lt;/b>&lt;/li>&#xa;&lt;li>path/page.html/prepended/appended&amp;nbsp;&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ol>&#xa;&lt;li>${'path/page.html' @ suffix='my/suffix'}&lt;/li>&#xa;&lt;li>${'path/page.html/some/suffix' @ suffix='my/suffix'}&lt;/li>&#xa;&lt;li>${'path/page.html/suffix' @ prependSuffix='prepended'}&lt;/li>&#xa;&lt;li>${'path/page.html/suffix' @ appendSuffix='appended'}&lt;/li>&#xa;&lt;li>${'path/page.html/suffix' @ suffix}&lt;/li>&#xa;&lt;li>${'path/page.html/some/existing/suffix' @ suffix='', appendSuffix='appended', prependSuffix='prepended'}&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_382769403>
+                <textquestion_1477051234
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>http://www.example.org/search?q=htl&amp;amp;array=1&amp;amp;array=2&amp;amp;array=3&lt;/li>&#xa;&lt;li>http://www.example.org/search?s=1&amp;amp;q=htl&amp;amp;array=1&amp;amp;array=2&amp;amp;array=3&lt;/li>&#xa;&lt;li>http://www.example.org/search?x=next&lt;/li>&#xa;&lt;li>http://www.example.org/search -&amp;nbsp;&lt;b>empty query removes all query params, query is used to override all existing query params of the url (same as suffix/path/selectors)&lt;/b>&lt;/li>&#xa;&lt;/ol>&#xa;&lt;ul>&#xa;&lt;li>&lt;b>query&amp;nbsp;&lt;/b>- adds, replaces or removes the query segment of a URI, depending on the contents of its map value&lt;/li>&#xa;&lt;/ul>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>&lt;p>&lt;b>addQuery&amp;nbsp;&lt;/b>- adds or extends the query segment of a URI with the contents of its map value&lt;/p>&#xa;&lt;/li>&#xa;&lt;li>&lt;p>&lt;b>removeQuery&amp;nbsp;&lt;/b>- removes the identified parameters from an existing query segment of a URI; its value can be a string or a string array&lt;/p>&#xa;&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Assuming that jsuse.query evaluates to:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>{&lt;br>&#xa;&amp;nbsp; &amp;nbsp;&amp;quot;query&amp;quot;: {&lt;br>&#xa;&amp;nbsp; &amp;nbsp;&amp;quot;q&amp;quot; : &amp;quot;htl&amp;quot;,&lt;br>&#xa;&amp;nbsp; &amp;nbsp;&amp;quot;array&amp;quot; : [1, 2, 3]&lt;br>&#xa;&amp;nbsp; &amp;nbsp;}&lt;br>&#xa;}&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>${'http://www.example.org/search' @ query=jsuse.query, context='uri'}&lt;/li>&#xa;&lt;li>${'http://www.example.org/search?s=1' @ addQuery=jsuse.query, context='uri'}&lt;/li>&#xa;&lt;li>${'http://www.example.org/search?s=1&amp;amp;q=ht&amp;amp;x=nextl' @ removeQuery=['s', 'q'], context='uri'}&lt;/li>&#xa;&lt;li>${'http://www.example.org/search?s=1&amp;amp;q=htl' @ query, context='uri'}&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1477051234>
+                <textquestion_1037447016
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ol>&#xa;&lt;li>${'path/page' @ fragment='fragment'}&lt;/li>&#xa;&lt;li>${'path/page#one' @ fragment='two'}&lt;/li>&#xa;&lt;li>${'path/page#one' @ fragment}&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ol>&#xa;&lt;li>path/page#fragment&lt;/li>&#xa;&lt;li>path/page#two&lt;/li>&#xa;&lt;li>${'path/page#one' @ fragment}&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>&lt;b>fragment&amp;nbsp;&lt;/b>- adds, modifies or replaces the fragment segment of a URI&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1037447016>
+                <textquestion_862797175
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>How to pass parameter to HTL use API with Sling Model ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>&amp;lt;div data-sly-use.nav=&amp;quot;${'com.model.NavModel' @ depth=1, showVisible=!wcmmode.edit}&amp;quot;&amp;gt;${nav.depth}&amp;lt;/div&amp;gt;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;p>@Model(&lt;b>adaptables = SlingHttpServletRequest.class&lt;/b>, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)&lt;br>&#xa;public class NavModel {&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>@Inject&lt;br>&#xa;private String depth;&lt;br>&#xa;&lt;br>&#xa;@Inject&lt;br>&#xa;private boolean isVisible;&lt;br>&#xa;&lt;br>&#xa;public String getDepth() {&lt;br>&#xa;return depth;&lt;br>&#xa;}&lt;br>&#xa;&lt;br>&#xa;public boolean isVisible() {&lt;br>&#xa;return isVisible;&lt;br>&#xa;}&lt;/p>&#xa;&lt;p>}&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_862797175>
+                <textquestion_1974233620
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What is the default name for data-sly-use variable ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>&lt;b>useBean&lt;/b>&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1974233620>
+                <textquestion_374494956
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Assuming that foobar = {'id' : 'foo', 'class' : 'bar'}&lt;/p>&#xa;&lt;p>what will be the value of:&lt;/p>&#xa;&lt;p>&amp;lt;input data-sly-attribute=&amp;quot;${foobar}&amp;quot; type=&amp;quot;text&amp;quot;/&amp;gt;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>&amp;lt;input id=&amp;quot;foo&amp;quot; class=&amp;quot;bar&amp;quot; type=&amp;quot;text&amp;quot;/&amp;gt;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_374494956>
+                <textquestion_1927284699
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Given following properties map:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>return ImmutableMap.of(&lt;br>&#xa;&amp;quot;attr1&amp;quot;, &amp;quot;attr1 value&amp;quot;,&lt;br>&#xa;&amp;quot;attrWithTrue&amp;quot;, true,&lt;br>&#xa;&amp;quot;attrWithFalse&amp;quot;, false,&lt;br>&#xa;&amp;quot;array-attr&amp;quot;, ImmutableList.of(1, 2, 3)&lt;br>&#xa;);&lt;/p>&#xa;&lt;p>What will be the result of:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;div data-sly-attribute=&amp;quot;${properties}&amp;quot;&amp;gt;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; Attrs added via map&lt;br>&#xa;&amp;lt;/div&amp;gt;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>&amp;lt;div attr1=&amp;quot;attr1 value&amp;quot; attrwithtrue=&amp;quot;&amp;quot; array-attr=&amp;quot;1,2,3&amp;quot;&amp;gt;&lt;/p>&#xa;&lt;p>&amp;nbsp; &amp;nbsp; Attrs added via map&lt;/p>&#xa;&lt;p>&amp;lt;/div&amp;gt;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1927284699>
+                <textquestion_2072303165
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Given:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>foobar = {'id': 'foo', 'class': 'bar', 'lang': ''}&lt;/p>&#xa;&lt;p>What will be the value of:&amp;nbsp;&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>&amp;lt;div class=&amp;quot;bar1&amp;quot; data-sly-attribute.class=&amp;quot;bar2&amp;quot; data-sly-attribute=&amp;quot;${foobar}&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/li>&#xa;&lt;li>&amp;lt;div data-sly-attribute=&amp;quot;${foobar}&amp;quot; data-sly-attribute.class=&amp;quot;bar2&amp;quot; id=&amp;quot;foo2&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ol>&#xa;&lt;li>&amp;lt;div id=&amp;quot;foo&amp;quot; class=&amp;quot;bar&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/li>&#xa;&lt;li>&amp;lt;div id=&amp;quot;foo2&amp;quot; class=&amp;quot;bar2&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>&lt;b>Arguments are processed from left to right - element on the left takes precedence ofver the one on the left !&lt;/b>&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_2072303165>
+                <textquestion_1265104619
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>No - all will render empty div.&amp;nbsp;&lt;/p>&#xa;&lt;p>Empty attribiutes &lt;b>will be removed&lt;/b>. This does not apply for normal attribuets added with literal value passed:&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>class=&amp;quot;&amp;quot; - will be rendered&lt;/li>&#xa;&lt;li>class=&amp;quot;${''}&amp;quot; - will not be rendered&lt;/li>&#xa;&lt;li>data-sly-attribiute=&amp;quot;&amp;quot; - will not be rendered&lt;/li>&#xa;&lt;li>data-sly-attribiute=&amp;quot;${''}&amp;quot; - will not be rendered&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Will any of the following div render the lang atribiute?&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;div lang=&amp;quot;${''}&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;br>&#xa;&amp;lt;div lang=&amp;quot;en&amp;quot; data-sly-attribute.lang&amp;gt;&amp;lt;/div&amp;gt;&lt;br>&#xa;&amp;lt;div lang=&amp;quot;en&amp;quot; data-sly-attribute.lang=&amp;quot;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;br>&#xa;&amp;lt;div lang=&amp;quot;en&amp;quot; data-sly-attribute.lang=&amp;quot;${''}&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1265104619>
+                <textquestion_949988179
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What will be rendered for:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>&amp;lt;div title=&amp;quot;${['one', 'two', 'three']}&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/li>&#xa;&lt;li>&amp;lt;div title=&amp;quot;${[]}&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ol>&#xa;&lt;li>&amp;lt;div title=&amp;quot;one,two,three&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/li>&#xa;&lt;li>&amp;lt;div&amp;gt;&amp;lt;/div&amp;gt;&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>Arrays are converted to Strings. Empty array is interpreted as empty value and will remove the attribuyte form HTML code.&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_949988179>
+                <textquestion_1574173388
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What will be rendered:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>&amp;lt;p data-sly-test=&amp;quot;${wcmmode.edit}&amp;quot;&amp;gt;You are in edit mode&amp;lt;/p&amp;gt;&lt;/li>&#xa;&lt;li>&amp;lt;p data-sly-test&amp;gt;Paragraph content&amp;lt;/p&amp;gt;&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ol>&#xa;&lt;li>Will be displayed in author mode only&lt;/li>&#xa;&lt;li>Wil &lt;b>never &lt;/b>be displayed&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1574173388>
+                <textquestion_316337568
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What are the values of v1-v4 ? Will the div element get displayed in the followign snippet ?&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;div data-sly-test.v1=&amp;quot;${'value-1'}&amp;quot; data-sly-test.v4=&amp;quot;${true}&amp;quot; data-sly-test.v2=&amp;quot;${''}&amp;quot; data-sly-test.v3=&amp;quot;${'new value'}&amp;quot; &amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;lt;p&amp;gt;Div content in sly test&amp;lt;/p&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;/div&amp;gt;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>1. The div element will not be displayed&lt;/p>&#xa;&lt;p>v1 - value-1&lt;/p>&#xa;&lt;p>v4 - true&lt;/p>&#xa;&lt;p>v2 - ''&lt;/p>&#xa;&lt;p>v3 - ''&lt;/p>&#xa;&lt;p>&lt;b>Test variables after the first one that has evaluated to false will not be evaluated!&amp;nbsp;&lt;/b>&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_316337568>
+                <textquestion_574191594
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Given the list list=[0, 1, 2, ..., 7]&lt;/p>&#xa;&lt;p>What will be displayed for:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;ul data-sly-list=&amp;quot;${list @ begin = 1, end = 3}&amp;quot;&amp;gt;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;lt;li&amp;gt;${item}&amp;lt;/li&amp;gt;&lt;br>&#xa;&amp;lt;/ul&amp;gt;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>&amp;lt;ul&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;li&amp;gt;1&amp;lt;/li&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;li&amp;gt;2&amp;lt;/li&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;li&amp;gt;3&amp;lt;/li&amp;gt;&lt;/p>&#xa;&lt;p>&amp;lt;ul&amp;gt;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_574191594>
+                <textquestion_1203098142
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Rewrite the following code using data-sly-repeat instead data-sly-list&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;ul data-sly-list=&amp;quot;${list @ begin = 1, end = 3}&amp;quot;&amp;gt;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;lt;li&amp;gt;${item}&amp;lt;/li&amp;gt;&lt;br>&#xa;&amp;lt;/ul&amp;gt;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>&amp;lt;ul&amp;gt;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;lt;li data-sly-repeat=&amp;quot;${list @ begin = 1, end = 3}&amp;quot;&amp;gt;${item}&amp;lt;/li&amp;gt;&lt;br>&#xa;&amp;lt;/ul&amp;gt;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1203098142>
+                <textquestion_1192513475
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What is the item of the iteration over map ? Key of the map entry or the value ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>&lt;b>Key &lt;/b>of map entry&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1192513475>
+            </responsivegrid_1958287619>
+        </root>
+    </jcr:content>
+</jcr:root>
