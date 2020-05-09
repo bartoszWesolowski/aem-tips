@@ -1,0 +1,20 @@
+DEFINE group.system.path /home/groups/aemexamples/system
+
+
+# THIS IS SCRIPT FOR HUMANA AP SERVICE USER
+
+CREATE GROUP aemexamples-system-administrators ${group.system.path} IF NOT EXISTS
+FOR GROUP aemexamples-system-administrators
+    PURGE /
+    ALLOW  /home/groups                                                 [READ]
+    ALLOW  /home/users                                                  [READ]
+    ALLOW  /content                                                     [ALL]
+    ALLOW  /conf                                                        [ALL]
+
+
+CREATE SYSTEM USER aemexamples-service-administrator system IF NOT EXISTS
+FOR USER aemexamples-service-administrator
+    ADD TO GROUP [aemexamples-system-administrators]
+    SET PROPERTY profile/givenName 'AEM examples Administrator'
+    SET PROPERTY profile/aboutMe 'System user for managinig all actions in AEM examples project'
+
