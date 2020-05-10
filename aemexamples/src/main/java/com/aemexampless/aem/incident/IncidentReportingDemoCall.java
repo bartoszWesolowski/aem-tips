@@ -1,18 +1,21 @@
-package com.aemexampless.aem.services;
+package com.aemexampless.aem.incident;
 
+import com.aemexampless.aem.incident.impl.SimpleIncident;
+import java.util.Date;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.metatype.annotations.AttributeDefinition;
 import org.osgi.service.metatype.annotations.Designate;
 import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Designate(ocd=SimpleScheduledTask.Config.class)
-@Component(service=Runnable.class)
-public class SimpleScheduledTask implements Runnable {
+@Designate(ocd = IncidentReportingDemoCall.Config.class)
+@Component(service = Runnable.class)
+public class IncidentReportingDemoCall implements Runnable {
 
-  @ObjectClassDefinition(name="A scheduled task",  description = "...")
+  @ObjectClassDefinition(name = "A scheduled task", description = "...")
   public static @interface Config {
 
     @AttributeDefinition(name = "Cron-job expression")
@@ -25,13 +28,19 @@ public class SimpleScheduledTask implements Runnable {
     String myParameter() default "";
   }
 
-  private static final Logger LOG = LoggerFactory.getLogger(SimpleScheduledTask.class.getName());
+  private static final Logger LOG = LoggerFactory
+    .getLogger(IncidentReportingDemoCall.class.getName());
 
   private String myParameter;
 
+  @Reference
+  private IncidentReportingService incidentReportingService;
+
   @Override
   public void run() {
-    // LOG.info("Running task scheduled with expression: */30 * * * * ?, with param: {}", myParameter);
+    incidentReportingService
+      .reportIncident(new SimpleIncident("Demo incident", "Date: " + new Date().toString()));
+    LOG.info("Running task scheduled with expression: */30 * * * * ?, with param: {}", myParameter);
   }
 
   @Activate

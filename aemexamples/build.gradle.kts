@@ -56,12 +56,17 @@ aem {
         satisfier { // customizing CRX packages to be deployed as dependencies before built AEM application
             packages {
                 "core-components"("https://github.com/adobe/aem-core-wcm-components/releases/download/core.wcm.components.reactor-2.8.0/core.wcm.components.all-2.8.0.zip")
+                "cognifide-cq-actions"("https://github.com/Cognifide/APM/releases/download/apm-4.3.0/cq-actions-msg-replication-6.4.0.zip")
+                "cognifide-apm"("https://github.com/Cognifide/APM/releases/download/apm-4.3.0/apm-4.3.0.zip")
             }
         }
     }
 
     tasks {
         jar {
+            manifest {
+                attributes["Bundle-SymbolicName"] = "com.aemexamples.aem"
+            }
             bundle {
                 exportPackage("com.aemexampless.aem.*")
                 slingModelPackages = "com.aemexampless.aem"

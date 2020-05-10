@@ -4,5 +4,6 @@
     <filter root="/conf/aemexamples/wcm"/>
     <filter root="/content/aemexamples"/>
     <filter root="/content/dam/aemexamples"/>
+    <filter root="/content/cq:tags/aem-examples"/>
     <filter root="/apps/sling/servlet/errorhandler"/>
 </workspaceFilter>
