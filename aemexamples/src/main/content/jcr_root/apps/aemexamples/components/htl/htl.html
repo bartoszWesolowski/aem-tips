@@ -1,6 +1,6 @@
 <sly data-sly-test.myFunctionName="${'test'}" />
 
-<a href="#whatever" onclick="${myFunctionName}">Link</a>
+<a href="#whatever" onclick="${myFunctionName}()">Link</a>
 
 <sly data-sly-test.var1="${false}" data-sly-test.var2="${'value'}" />
 
@@ -31,9 +31,6 @@ ${'path/page.woo.foo.html' @ selectors=['a', 'b'], addSelectors=['c']}
 ${'path/page.woo.foo.html' @ extension=''}
 <h3>Suffix</h3>
 
-<sly data-sly-use.queryJs="query.js"/>
-    ${xtz.query}
-${'http://www.example.org/search?x=next' @ query=queryJs.query, addQuery=queryJs.addQuery, removeQuery=['s', 'q'], context='uri'}
 
 <h1>Directives</h1>
 <sly data-sly-use="${'com.aemexampless.aem.htl.NavModel' @ depth='depth value', isVisible=!wcmmode.edit}" />
@@ -66,4 +63,3 @@ V4: ${v4}
 <ul>
      <li data-sly-repeat="${useBean.list @ begin = 1, end = 3}">${item}</li>
 </ul>
-dsad

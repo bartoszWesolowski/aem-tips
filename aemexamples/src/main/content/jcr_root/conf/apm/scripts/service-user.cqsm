@@ -10,6 +10,7 @@ FOR GROUP aemexamples-system-administrators
     ALLOW  /home/users                                                  [READ]
     ALLOW  /content                                                     [ALL]
     ALLOW  /conf                                                        [ALL]
+    ALLOW  /content                                                     [READ,MODIFY,CREATE]
 
 
 CREATE SYSTEM USER aemexamples-service-administrator system IF NOT EXISTS

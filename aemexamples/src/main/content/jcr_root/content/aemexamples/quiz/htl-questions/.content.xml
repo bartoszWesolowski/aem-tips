@@ -2,6 +2,8 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
+        cq:lastModified="{Date}2020-05-13T15:26:53.314+02:00"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
         jcr:primaryType="cq:PageContent"
         jcr:title="HTL questions"
@@ -40,9 +42,11 @@
                         text="&lt;p>What will be the result of the following HTL script template, where :&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;sly data-sly-test.myFunctionName=&amp;quot;${'test'}&amp;quot; /&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;a href=&amp;quot;#whatever&amp;quot; onclick=&amp;quot;${myFunctionName}()&amp;quot;&amp;gt;Link&amp;lt;/a&amp;gt;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
+                        jcr:lastModified="{Date}2020-05-13T15:12:12.786+02:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
-                        text="&lt;p>For &lt;b>script &lt;/b>ans &lt;b>styles &lt;/b>context the&amp;nbsp;&lt;b style=&quot;font-style: italic;&quot;>scriptToken &lt;/b>context is required to render the value of the expression. In this case the result will be:&amp;nbsp;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;a href=&amp;quot;#whatever&amp;quot;&amp;gt;Link&amp;lt;/a&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;nbsp;&lt;b>Note that the attribute was removed (this is the case if the value was an expression that evaluated to empty value (or null)&lt;/b>&lt;/p>&#xa;&lt;p>Other examples where scriptToken context is reuqired:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;script&amp;gt;var bar='${someText @ context=&amp;quot;scriptString&amp;quot;}';&amp;lt;/script&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;a href=&amp;quot;#whatever&amp;quot; style=&amp;quot;color: ${colorName @ context='styleToken'};&amp;quot;&amp;gt;Link&amp;lt;/a&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;style&amp;gt;&lt;br>&#xa;a.${className @ context=&amp;quot;styleToken&amp;quot;} {&lt;br>&#xa;font-family: '${fontFamily @ context=&amp;quot;styleString&amp;quot;}', sans-serif;&lt;br>&#xa;color: #${colorHashValue @ context=&amp;quot;styleToken&amp;quot;};&lt;br>&#xa;margin-${side @ context=&amp;quot;styleToken&amp;quot;}: 1em; /* E.g. for bi-directional text */&lt;br>&#xa;}&lt;br>&#xa;&amp;lt;/style&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;nbsp;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;nbsp;&lt;/p>&#xa;"
+                        text="&lt;p>For &lt;b>script &lt;/b>ans &lt;b>styles &lt;/b>context the&amp;nbsp;&lt;b style=&quot;font-style: italic;&quot;>scriptToken &lt;/b>context is required to render the value of the expression. In this case the result will be:&amp;nbsp;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;a href=&amp;quot;#whatever&amp;quot; onclick=&amp;quot;()&amp;quot;&amp;gt;Link&amp;lt;/a&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;nbsp;&lt;b>Note that the attribute was removed (this is the case if the value was an expression that evaluated to empty value (or null)&lt;/b>&lt;/p>&#xa;&lt;p>Other examples where scriptToken context is reuqired:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;script&amp;gt;var bar='${someText @ context=&amp;quot;scriptString&amp;quot;}';&amp;lt;/script&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;a href=&amp;quot;#whatever&amp;quot; style=&amp;quot;color: ${colorName @ context='styleToken'};&amp;quot;&amp;gt;Link&amp;lt;/a&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;lt;style&amp;gt;&lt;br>&#xa;a.${className @ context=&amp;quot;styleToken&amp;quot;} {&lt;br>&#xa;font-family: '${fontFamily @ context=&amp;quot;styleString&amp;quot;}', sans-serif;&lt;br>&#xa;color: #${colorHashValue @ context=&amp;quot;styleToken&amp;quot;};&lt;br>&#xa;margin-${side @ context=&amp;quot;styleToken&amp;quot;}: 1em; /* E.g. for bi-directional text */&lt;br>&#xa;}&lt;br>&#xa;&amp;lt;/style&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;nbsp;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_copy>
                 <textquestion_274298058
@@ -54,9 +58,11 @@
                         text="&lt;p>What will be rendered for the following snippter:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;sly data-sly-test.var1=&amp;quot;${false}&amp;quot; data-sly-test.var2=&amp;quot;${'value'}&amp;quot; /&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;sly data-sly-test.var2=&amp;quot;${'value'}&amp;quot; /&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;div attr-test=&amp;quot;${var1 || var2}&amp;quot;&amp;gt; Test 1&amp;lt;/div&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;div attr-test=&amp;quot;${var1 || true}&amp;quot;&amp;gt;Test 2&amp;lt;/div&amp;gt;&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
+                        jcr:lastModified="{Date}2020-05-13T15:12:22.460+02:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
-                        text="&lt;p>&amp;lt;div attr-test=&amp;quot;value&amp;quot;&amp;gt; Test 1&amp;lt;/div&amp;gt;&lt;/p>&#xa;&lt;p>&amp;lt;div attr-test=&amp;quot;&amp;quot;&amp;gt;Test2&amp;lt;/div&amp;gt;&lt;/p>&#xa;"
+                        text="&lt;p>&amp;lt;div attr-test=&amp;quot;value&amp;quot;&amp;gt; Test 1&amp;lt;/div&amp;gt;&lt;/p>&#xa;&lt;p>&amp;lt;div attr-test&amp;gt;Test2&amp;lt;/div&amp;gt;&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_274298058>
                 <textquestion_1771944579
@@ -169,9 +175,11 @@
                         text="&lt;div>Selectors:&lt;/div>&#xa;&lt;ol>&#xa;&lt;li>${'path/page.woo.foo.html' @ selectors='foo.bar'}&lt;/li>&#xa;&lt;li>${'path/page.woo.foo.html' @ selectors=['foo', 'bar']}&lt;/li>&#xa;&lt;/ol>&#xa;&lt;div>Add selectors:&amp;nbsp;&lt;/div>&#xa;&lt;ol>&#xa;&lt;li>${'path/page.woo.foo.html' @ addSelectors='foo.bar'}&lt;/li>&#xa;&lt;li>${'path/page.woo.foo.html' @ addSelectors=['foo', 'bar']}&lt;/li>&#xa;&lt;/ol>&#xa;&lt;div>Remove selecotrs:&lt;/div>&#xa;&lt;ol>&#xa;&lt;li>${'path/page.woo.foo.html' @ removeSelectors='foo.bar'}&lt;/li>&#xa;&lt;li>${'path/page.woo.foo.html' @ removeSelectors=['foo', 'bar']}&lt;/li>&#xa;&lt;/ol>&#xa;&lt;div>Empty selectors:&lt;/div>&#xa;&lt;ol>&#xa;&lt;li>${'path/page.woo.foo.html' @ selectors}&lt;/li>&#xa;&lt;li>${'path/page.woo.foo.html' @ selectors=''}&lt;br>&#xa;&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
+                        jcr:lastModified="{Date}2020-05-13T15:20:00.077+02:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
-                        text="&lt;p>Selectors:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>path/page.foo.bar.html&lt;/li>&#xa;&lt;li>path/page.foo.bar.html -&amp;nbsp;&lt;b>existing selectors will be overwritten&amp;nbsp;&lt;/b>&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>Add selectors:&amp;nbsp;&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>path/page.woo.foo.foo.bar.html&lt;/li>&#xa;&lt;li>path/page.woo.foo.foo.bar.html -&amp;nbsp;&lt;b>creates a set of selectors - duplicated ones are added only once&lt;/b>&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>Remove selecotrs:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>path/page.woo.html&lt;/li>&#xa;&lt;li>path/page.woo.html&amp;nbsp;&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>Empty selectors - if empty array of selectors passed&amp;nbsp;&lt;b>will remove all selectors&lt;/b>:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>path/page.html&amp;nbsp;&lt;/li>&#xa;&lt;li>path/page.html&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        text="&lt;p>Selectors:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>path/page.foo.bar.html&lt;/li>&#xa;&lt;li>path/page.foo.bar.html -&amp;nbsp;&lt;b>existing selectors will be overwritten&amp;nbsp;&lt;/b>&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>Add selectors:&amp;nbsp;&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>path/page.wo.foo.bar.html&lt;/li>&#xa;&lt;li>path/page.woo.foo.bar.html -&amp;nbsp;&lt;b>creates a set of selectors - duplicated ones are added only once&lt;/b>&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>Remove selecotrs:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>path/page.woo.html&lt;/li>&#xa;&lt;li>path/page.woo.html&amp;nbsp;&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>Empty selectors - if empty array of selectors passed&amp;nbsp;&lt;b>will remove all selectors&lt;/b>:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>path/page.html&amp;nbsp;&lt;/li>&#xa;&lt;li>path/page.html&lt;/li>&#xa;&lt;/ol>&#xa;"
                         textIsRich="true"/>
                 </textquestion_1754062694>
                 <textquestion_686098701
@@ -298,9 +306,11 @@
                         text="&lt;p>Given following properties map:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>return ImmutableMap.of(&lt;br>&#xa;&amp;quot;attr1&amp;quot;, &amp;quot;attr1 value&amp;quot;,&lt;br>&#xa;&amp;quot;attrWithTrue&amp;quot;, true,&lt;br>&#xa;&amp;quot;attrWithFalse&amp;quot;, false,&lt;br>&#xa;&amp;quot;array-attr&amp;quot;, ImmutableList.of(1, 2, 3)&lt;br>&#xa;);&lt;/p>&#xa;&lt;p>What will be the result of:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;div data-sly-attribute=&amp;quot;${properties}&amp;quot;&amp;gt;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; Attrs added via map&lt;br>&#xa;&amp;lt;/div&amp;gt;&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
+                        jcr:lastModified="{Date}2020-05-13T15:26:53.302+02:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
-                        text="&lt;p>&amp;lt;div attr1=&amp;quot;attr1 value&amp;quot; attrwithtrue=&amp;quot;&amp;quot; array-attr=&amp;quot;1,2,3&amp;quot;&amp;gt;&lt;/p>&#xa;&lt;p>&amp;nbsp; &amp;nbsp; Attrs added via map&lt;/p>&#xa;&lt;p>&amp;lt;/div&amp;gt;&lt;/p>&#xa;"
+                        text="&lt;p>&amp;lt;div attr1=&amp;quot;attr1 value&amp;quot; attrwithtrue array-attr=&amp;quot;1,2,3&amp;quot;&amp;gt;&lt;/p>&#xa;&lt;p>&amp;nbsp; &amp;nbsp; Attrs added via map&lt;/p>&#xa;&lt;p>&amp;lt;/div&amp;gt;&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_1927284699>
                 <textquestion_2072303165

@@ -46,11 +46,11 @@ dependencies {
 }
 
 aem {
-    `package` {
-        validator {
-            base("com.adobe.acs:acs-aem-commons-oakpal-checks:4.3.4")
-        }
-    }
+//    `package` {
+//        validator {
+//            base("com.adobe.acs:acs-aem-commons-oakpal-checks:4.3.4")
+//        }
+//    }
 
     instance {
         satisfier { // customizing CRX packages to be deployed as dependencies before built AEM application

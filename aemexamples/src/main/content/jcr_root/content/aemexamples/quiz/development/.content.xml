@@ -2,9 +2,9 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2020-05-10T15:09:29.075+02:00"
+        cq:lastModified="{Date}2020-05-13T21:49:11.182+02:00"
         cq:lastModifiedBy="admin"
-        cq:tags="[aemexamples,aemexamples2]"
+        cq:tags="[]"
         cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
         jcr:primaryType="cq:PageContent"
         jcr:title="Development"
@@ -628,6 +628,28 @@
                         text="&lt;ul>&#xa;&lt;li>updates on services might be applied to service without reactivating the component&lt;/li>&#xa;&lt;li>if injection is done trhoug methods then they will be called when service set will change or service will be updated&lt;/li>&#xa;&lt;li>if policy option is RELUCTANT then single value references will not be changed when new best matching service is, for multiple services new service will be added to collection&lt;/li>&#xa;&lt;li>for policy option GREEDY single value references will be updated if better match is found. new services will be also added for multiple reference&lt;/li>&#xa;&lt;/ul>&#xa;"
                         textIsRich="true"/>
                 </textquestion_718185535>
+                <textquestion_41458885
+                    jcr:created="{Date}2020-05-13T21:46:28.247+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-13T21:46:28.247+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-13T21:47:14.946+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Describe how ACL are resolved for a given subject&amp;nbsp; and path?&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-13T21:49:11.170+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Oak goes up the hierarchy tree and looks for ACL entries that match the subject. The first entry that matches the subject will be used.&lt;/p>&#xa;&lt;p>Important note: if there is an ACL for a principal in the hierarchy it &lt;b>always &lt;/b>takes precedence (no matter what the other entries for his groups were found)&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_41458885>
             </responsivegrid_1958287619>
         </root>
     </jcr:content>
