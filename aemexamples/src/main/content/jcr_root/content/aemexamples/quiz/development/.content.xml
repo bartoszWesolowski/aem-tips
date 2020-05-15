@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2020-05-13T21:49:11.182+02:00"
+        cq:lastModified="{Date}2020-05-14T15:25:01.618+02:00"
         cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
@@ -650,6 +650,28 @@
                         text="&lt;p>Oak goes up the hierarchy tree and looks for ACL entries that match the subject. The first entry that matches the subject will be used.&lt;/p>&#xa;&lt;p>Important note: if there is an ACL for a principal in the hierarchy it &lt;b>always &lt;/b>takes precedence (no matter what the other entries for his groups were found)&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_41458885>
+                <textquestion_846396895
+                    jcr:created="{Date}2020-05-14T15:15:59.652+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-14T15:15:59.652+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-14T15:16:11.849+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>How to install Service pack or hotfix ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-14T15:25:01.605+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>1. Folder install can be created under /crx-quickstart and the desired zip can be pasted there. AEM will install it automatically&lt;/p>&#xa;&lt;p>2. Can be installed with curl command/http request (remebre to add&amp;nbsp;&amp;nbsp;cmd=install&amp;amp;recursive=true - to install nested packages)&lt;/p>&#xa;&lt;p>curl -u admin:admin -F file=@&amp;quot;name of zip file&amp;quot; -F name=&amp;quot;name of package&amp;quot;&amp;nbsp;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -F force=true -F install=true http://localhost:4502/crx/packmgr/service.jsp&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;p>If installation has finished sucesfully then under&amp;nbsp;&lt;i>/system/console/productinfo&lt;/i> AEM should display new version&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_846396895>
             </responsivegrid_1958287619>
         </root>
     </jcr:content>
