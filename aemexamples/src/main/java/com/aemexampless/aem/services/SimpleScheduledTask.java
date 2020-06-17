@@ -9,7 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Designate(ocd=SimpleScheduledTask.Config.class)
-@Component(service=Runnable.class)
+@Component(service=Runnable.class, factory = "com.aemexamples.aem.scheduled.factory")
 public class SimpleScheduledTask implements Runnable {
 
   @ObjectClassDefinition(name="A scheduled task",  description = "...")

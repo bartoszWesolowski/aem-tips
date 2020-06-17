@@ -2,13 +2,14 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2020-05-09T14:46:39.601+02:00"
+        cq:lastModified="{Date}2020-05-16T21:50:53.284+02:00"
         cq:lastModifiedBy="admin"
         cq:tags="[aem-examples:quiz/development,aem-examples:quiz/htl]"
         cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
         jcr:primaryType="cq:PageContent"
         jcr:title="Quiz"
-        sling:resourceType="aemexamples/components/page">
+        sling:resourceType="aemexamples/components/page"
+        sling:vanityPath="[/dsadaddsada,/dsadadjj]">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
@@ -36,7 +37,19 @@
                 <quiz
                     jcr:primaryType="nt:unstructured"
                     sling:reourceType="aemexamples/components/quiz"
-                    sling:resourceType="aemexamples/components/quiz"/>
+                    sling:resourceType="aemexamples/components/quiz">
+                    <items
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/responsivegrid">
+                        <textquestion
+                            jcr:created="{Date}2020-05-16T21:50:33.748+02:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2020-05-16T21:50:33.748+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="aemexamples/components/quiz/question/textQuestion"/>
+                    </items>
+                </quiz>
                 <text
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="wcm/foundation/components/text"
@@ -256,9 +269,17 @@
                         text="&lt;p>/crx-quickstart/launchpad/config&lt;/p>&#xa;&lt;p>This should be &lt;b>never &lt;/b>edited manually - but should be included in backups&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_1730765248>
+                <htlexamplescomponent
+                    jcr:created="{Date}2020-05-16T21:50:53.276+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-16T21:50:53.276+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/htlExamplesComponent"/>
             </responsivegrid_1958287619>
         </root>
     </jcr:content>
     <htl-questions/>
     <development/>
+    <dispatcher/>
 </jcr:root>

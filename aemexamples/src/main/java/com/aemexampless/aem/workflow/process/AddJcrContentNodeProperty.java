@@ -62,6 +62,7 @@ public class AddJcrContentNodeProperty implements WorkflowProcess {
         Node newNode = rootNode.addNode("newNode");
         newNode.setProperty("xyz", "xyz-value");
         newNode.setPrimaryType("nt:unstructured");
+        session.save();
       }
     } catch (LoginException e) {
       throw new WorkflowException("Failed to create session to get the resource payload", e);

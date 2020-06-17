@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-05-17T13:17:49.538+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Dispatcher"
+        sling:resourceType="aemexamples/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid_1958287619
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <text
+                    jcr:lastModified="{Date}2020-05-16T11:35:41.233+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/text"
+                    text="&lt;p>Dispatcher questions&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                    textIsRich="true"/>
+                <textquestion
+                    jcr:created="{Date}2020-05-16T11:35:47.331+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-16T11:35:47.331+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-16T11:36:24.782+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>How to configure permissions sensitive caching on dispatcher and AEM ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-17T13:17:49.533+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>An auth checker module needs to be configured on dispatcher and CUGs applied to desired pages on AEM.&amp;nbsp;&lt;/p>&#xa;&lt;p>On AEM:&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>create a servlet that will be used to check whether a path is allowed for current user&lt;/li>&#xa;&lt;li>SlingSafeMethodsServlet&amp;nbsp; - available for all users&lt;/li>&#xa;&lt;li>doHead method&lt;/li>&#xa;&lt;li>200 response if authenticated and authorized&lt;/li>&#xa;&lt;/ul>&#xa;&lt;p>On dispatcher configure auth checker (farm configuration)&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>in cache configuration allow for caching for permission protected pages by setting:&amp;nbsp;&amp;quot;&lt;br>&#xa;&lt;b>/allowAuthorized &amp;quot;1&amp;quot;&lt;/b>&lt;/li>&#xa;&lt;li>autheitncation info is taken from authorization header or cookie named authorization or login-token&lt;/li>&#xa;&lt;/ul>&#xa;&lt;p style=&quot;margin-left: 40.0px;&quot;>/auth_checker&lt;br>&#xa;{&lt;br>&#xa;# request is sent to this URL with '?uri=&amp;lt;page&amp;gt;' appended&lt;br>&#xa;/url &amp;quot;/bin/permissioncheck&amp;quot;&lt;br>&#xa;&lt;br>&#xa;# only the requested pages matching the filter section below are checked,&lt;br>&#xa;# all other pages get delivered unchecked&lt;br>&#xa;&amp;nbsp; &amp;nbsp;/filter&lt;br>&#xa;&amp;nbsp; &amp;nbsp;{&lt;br>&#xa;&amp;nbsp; &amp;nbsp; /0000&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp;{&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp;/glob &amp;quot;*&amp;quot;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp;/type &amp;quot;deny&amp;quot;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp;}&lt;br>&#xa;&amp;nbsp; &amp;nbsp;/0001&lt;br>&#xa;&amp;nbsp; &amp;nbsp; {&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp;/glob &amp;quot;/content/secure/*.html&amp;quot;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp;/type &amp;quot;allow&amp;quot;&lt;br>&#xa;&amp;nbsp; &amp;nbsp;}&lt;br>&#xa;&amp;nbsp;}&lt;br>&#xa;# any header line returned from the auth_checker's HEAD request matching&lt;br>&#xa;# the section below will be returned as well&lt;br>&#xa;&amp;nbsp;/headers&lt;br>&#xa;&amp;nbsp;{&lt;br>&#xa;&amp;nbsp; &amp;nbsp; /0000&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp;{&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp; /glob &amp;quot;*&amp;quot;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp; /type &amp;quot;deny&amp;quot;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; }&lt;br>&#xa;&amp;nbsp; &amp;nbsp;/0001&lt;br>&#xa;&amp;nbsp; &amp;nbsp;{&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp;/glob &amp;quot;Set-Cookie:*&amp;quot;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp;/type &amp;quot;allow&amp;quot;&lt;br>&#xa;&amp;nbsp; &amp;nbsp;}&lt;br>&#xa;&amp;nbsp;}&lt;br>&#xa;}&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion>
+                <textquestion_1779964068
+                    jcr:created="{Date}2020-05-16T12:00:28.927+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-16T12:00:28.927+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-16T12:01:04.971+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>In which cases Disp will always disable cache creation for a request?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-16T12:07:47.384+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ul>&#xa;&lt;li>if a request contains a query params (? in uri)&lt;/li>&#xa;&lt;li>if the file extension is missing&lt;/li>&#xa;&lt;li>authentication header set (if /allowedAuthorized '0')&lt;/li>&#xa;&lt;li>if AEM responds with headers `no-cache` no-store must-revalidate&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1779964068>
+                <textquestion_701179121
+                    jcr:created="{Date}2020-05-16T12:08:13.899+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-16T12:08:13.899+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-16T12:18:38.306+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>How to configure /cache section of dispatcher farm config?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-16T13:37:43.775+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ul>&#xa;&lt;li>/docroot &amp;quot;...&amp;quot; - same path as apache root directory&lt;/li>&#xa;&lt;li>/statfile - file used as statfile (optional)&lt;/li>&#xa;&lt;li>/statfileslevel - level to which stat files will be created&lt;/li>&#xa;&lt;li>/serveStaleOnError &amp;quot;1&amp;quot; - if cached file is outdated it will be deleted only if renderer returns 200 with content, if error occures then outdated file will be cached&lt;/li>&#xa;&lt;li>&lt;b>/rules&lt;/b>&lt;ul>&#xa;&lt;li>set of allow/deny rules that decides whether a document should be cached&lt;br style=&quot;font-weight: bold;&quot;>&#xa;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/li>&#xa;&lt;li>on publish deny all, allow whats needed&lt;/li>&#xa;&lt;li>/0001 { /type &amp;quot;allow&amp;quot; /glob &amp;quot;/etc/clientlibs*&amp;quot; }&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/li>&#xa;&lt;li>/invalidate - docuents that are automatically invalidated when content is updated&lt;br>&#xa;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;ul>&#xa;&lt;li>files are not deleted but refetched if outdated&lt;/li>&#xa;&lt;li>documents in cache that are not autmatically invalidated will be only remove by explicit update&lt;/li>&#xa;&lt;li>usually used for html pages&lt;/li>&#xa;&lt;li>/invalidate&lt;br>&#xa;{&lt;br>&#xa;/0000 { /glob &amp;quot;*&amp;quot; /type &amp;quot;deny&amp;quot; }&lt;br>&#xa;/0001 { /glob &amp;quot;*.html&amp;quot; /type &amp;quot;allow&amp;quot; }&lt;br>&#xa;}&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/li>&#xa;&lt;li>/ignoreUrlParams - defines which url parameters are ignored when determining wether a page is cached on should be delivered from cache&lt;ul>&#xa;&lt;li>if all query params on a request are ignored then page can be cached&lt;/li>&#xa;&lt;li>if contains one or more query params that are not cached then it's not cached&lt;/li>&#xa;&lt;li>/ignoreUrlParams&lt;br>&#xa;{&lt;br>&#xa;    /0001 { /glob &amp;quot;*&amp;quot; /type &amp;quot;deny&amp;quot; }&lt;br>&#xa;    /0002 { /glob &amp;quot;q&amp;quot; /type &amp;quot;allow&amp;quot; }&lt;br>&#xa;}&lt;br>&#xa;page requests with param q are allowed so will be cached regardles of q value, but /content?q=5&amp;amp;t=1 will not be cached as t is not allowed&lt;/li>&#xa;&lt;li>/ignoreUrlParams&lt;br>&#xa;{&lt;br>&#xa;    /0001 { /glob &amp;quot;*&amp;quot; /type &amp;quot;allow&amp;quot; }&lt;br>&#xa;} - to ignore all query url params&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/li>&#xa;&lt;li>/headers - list of headers that can be cached with the respone&lt;ul>&#xa;&lt;li>/headers&lt;br>&#xa;{&lt;br>&#xa;    /0000 { /glob &amp;quot;*&amp;quot; /type &amp;quot;deny&amp;quot; }&lt;br>&#xa;} - do not store any headers&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/li>&#xa;&lt;li>/rules&lt;ul>&#xa;&lt;li>/rules&lt;br>&#xa;{&lt;br>&#xa;    # Deny by default&lt;br>&#xa;    /0001 { /type &amp;quot;deny&amp;quot; /glob &amp;quot;*&amp;quot; }&lt;br>&#xa;    /0019 { /type &amp;quot;allow&amp;quot; /glob &amp;quot;/content/my-site/*&amp;quot; }&lt;br>&#xa; } - defines which reuests can be cached, using glob and type&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/li>&#xa;&lt;li>/allowedClients&lt;ul>&#xa;&lt;li>/allowedClients&lt;br>&#xa;{&lt;br>&#xa;    # Clients that can flush content&lt;br>&#xa;    # Disallow from all&lt;br>&#xa;    /0001 { /glob &amp;quot;*.*.*.*&amp;quot;  /type &amp;quot;deny&amp;quot; }&lt;br>&#xa;    # Allow from localhost&lt;br>&#xa;    /0002 { /glob &amp;quot;127.0.0.1&amp;quot; /type &amp;quot;allow&amp;quot; }&lt;br>&#xa;}&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/li>&#xa;&lt;/ul>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>Statfile level:&amp;nbsp;&lt;ul>&#xa;&lt;li>disp creates .stat files in each folder from docroot (level 0) to the level specified in this prop&lt;/li>&#xa;&lt;li>if stat file is newer than cached file then the document is refetched&lt;/li>&#xa;&lt;li>when file at certain level is invalidated then &lt;b>all&lt;/b>&amp;nbsp;files from the 0 to the level of invalidated file of configured statfilelevel (smaller number choosen) will be touched&lt;/li>&#xa;&lt;li>to invalidate only one resource without touching the stat file use&amp;nbsp;&lt;b>CQ-Action-Scope:ResourceOnly&lt;/b>&amp;nbsp;header&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_701179121>
+                <textquestion_779265245
+                    jcr:created="{Date}2020-05-16T13:43:38.798+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-16T13:43:38.798+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-16T13:43:51.201+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>How to configure vanity urls ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-16T13:48:24.622+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ul>&#xa;&lt;li>all vanity urls needs to be filtered out from the allowed dispatcher paths&lt;/li>&#xa;&lt;li>if a path is not allowed in a filter then dispatcher checks the file with vanity paths, if path is in vanity then resource is returned&lt;/li>&#xa;&lt;li>dispatcher periodically calls render server to get all vanity urls&lt;/li>&#xa;&lt;li>in famrs section:&amp;nbsp;&lt;ul>&#xa;&lt;li>/vanity_urls {&lt;br>&#xa;&amp;nbsp; &amp;nbsp;/url &amp;quot;/libs/granite/dispatcher/content/vanityUrls.html&amp;quot;&lt;br>&#xa;&amp;nbsp; &amp;nbsp;/file &amp;quot;/tmp/vanity_urls&amp;quot;&lt;br>&#xa;&amp;nbsp; &amp;nbsp;/delay 300 - time in seconds between calls to vanity servlet&lt;br>&#xa;}&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_779265245>
+                <textquestion_685649321
+                    jcr:created="{Date}2020-05-16T14:00:32.262+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-16T14:00:32.262+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-16T14:01:00.884+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>How to menage which urls will be processed by dispatcher and AEM ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-16T14:02:58.084+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Configure /filter section of /farm configuration:&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>if not allowed in filters then 404 is returned&lt;/li>&#xa;&lt;li>/method&amp;nbsp;,&amp;nbsp;/url&amp;nbsp;,&amp;nbsp;/query&amp;nbsp;, or&amp;nbsp;/protocol&amp;nbsp;&amp;nbsp;/path&amp;nbsp;,&amp;nbsp;/selectors&amp;nbsp;,&amp;nbsp;/extension&amp;nbsp;and&amp;nbsp;/suffix&lt;/li>&#xa;&lt;li>/glob to match entire request line&lt;/li>&#xa;&lt;li>/filter {&lt;br>&#xa;    /0001  { /glob &amp;quot;*&amp;quot; /type &amp;quot;deny&amp;quot; }&lt;br>&#xa;    /0002 { /type &amp;quot;allow&amp;quot; /method &amp;quot;POST&amp;quot; /url &amp;quot;/content/[.]*.form.html&amp;quot; }&lt;br>&#xa;}&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_685649321>
+                <textquestion_816677062
+                    jcr:created="{Date}2020-05-16T14:03:47.398+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-16T14:03:47.398+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-16T14:04:41.301+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What the&amp;nbsp;clientheaders property is used for ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-16T14:06:26.379+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>List of HTTP headers that dispatcher passes to render instance.&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_816677062>
+            </responsivegrid_1958287619>
+        </root>
+    </jcr:content>
+</jcr:root>

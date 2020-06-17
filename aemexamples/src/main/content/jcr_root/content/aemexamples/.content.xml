@@ -6,7 +6,13 @@
         cq:conf="/conf/aemexamples"
         jcr:primaryType="cq:PageContent"
         jcr:title="AEM examples "
-        sling:resourceType="aemexamples/components/page"/>
+        sling:resourceType="aemexamples/components/page"
+    newProp="aaaaaaaaaaa"
+    newProppppp="DSdadasd">
+        <test
+            jcr:primaryType="nt:unstructured"
+        testProp="ABCCCC"/>
+    </jcr:content>
     <example-page/>
     <aem-examples/>
     <quiz/>

@@ -2,7 +2,7 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/aemexamples"/>
     <filter root="/conf/aemexamples"/>
-    <filter root="/content/aemexamples"/>
+    <filter root="/content/aemexamples" mode="merge"/>
     <filter root="/content/dam/aemexamples"/>
     <filter root="/content/cq:tags/aem-examples"/>
     <filter root="/apps/sling/servlet/errorhandler"/>

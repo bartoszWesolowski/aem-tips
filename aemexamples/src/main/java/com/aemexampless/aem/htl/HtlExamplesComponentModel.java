@@ -4,11 +4,16 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.PostConstruct;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Model(adaptables = Resource.class)
 public class HtlExamplesComponentModel {
+
+  private static final Logger LOG = LoggerFactory.getLogger(HtlExamplesComponentModel.class);
 
   public Map<String, Object> attributes() {
     return ImmutableMap.of(
@@ -29,5 +34,10 @@ public class HtlExamplesComponentModel {
 
   public String text() {
     return "Text from sling model";
+  }
+
+  @PostConstruct
+  protected void init() {
+    LOG.error("Error rom component");
   }
 }

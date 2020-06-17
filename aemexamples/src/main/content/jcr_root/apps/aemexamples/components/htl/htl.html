@@ -1,5 +1,5 @@
 <sly data-sly-test.myFunctionName="${'test'}" />
-
+<div some-attr="www.xyz'dasda.com">some weird value in attr</div>
 <a href="#whatever" onclick="${myFunctionName}()">Link</a>
 
 <sly data-sly-test.var1="${false}" data-sly-test.var2="${'value'}" />
@@ -54,12 +54,15 @@ V2: ${v2}
 V3: ${v3}
 V4: ${v4}
 
-
+<!--
 <h2>data-sly-list</h2>
 <ul data-sly-list="${useBean.list @ begin = 1, end = 3}">
     <li>${item}</li>
 </ul>
-
+-->
 <ul>
      <li data-sly-repeat="${useBean.list @ begin = 1, end = 3}">${item}</li>
 </ul>
+
+<h2>DOmain:</h2>
+${'http://www.example.com/path/page.html' @ domain=''}

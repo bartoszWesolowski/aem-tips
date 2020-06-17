@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2020-05-14T15:25:01.618+02:00"
+        cq:lastModified="{Date}2020-05-17T12:46:59.161+02:00"
         cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
@@ -672,6 +672,116 @@
                         text="&lt;p>1. Folder install can be created under /crx-quickstart and the desired zip can be pasted there. AEM will install it automatically&lt;/p>&#xa;&lt;p>2. Can be installed with curl command/http request (remebre to add&amp;nbsp;&amp;nbsp;cmd=install&amp;amp;recursive=true - to install nested packages)&lt;/p>&#xa;&lt;p>curl -u admin:admin -F file=@&amp;quot;name of zip file&amp;quot; -F name=&amp;quot;name of package&amp;quot;&amp;nbsp;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -F force=true -F install=true http://localhost:4502/crx/packmgr/service.jsp&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;p>If installation has finished sucesfully then under&amp;nbsp;&lt;i>/system/console/productinfo&lt;/i> AEM should display new version&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_846396895>
+                <textquestion_664070931
+                    jcr:created="{Date}2020-05-16T14:21:15.737+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-16T14:21:15.737+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-16T14:21:28.204+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>How fitler modes works ?&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-16T14:21:33.198+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ol>&#xa;&lt;li>replace&amp;nbsp;: This is the normal behavior. Existing content is replaced completely by the imported content, i.e. is overridden or deleted accordingly.&lt;/li>&#xa;&lt;li>merge&amp;nbsp;: Existing content is not modified, i.e. only new content is added and none is deleted or modified.&lt;/li>&#xa;&lt;li>update&amp;nbsp;: Existing content is updated, new content is added and none is deleted.&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_664070931>
+                <textquestion_668488678
+                    jcr:created="{Date}2020-05-17T09:51:37.644+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-17T09:51:37.644+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-17T09:51:52.311+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>How sling resolves servlets to use for a request ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-17T09:51:55.908+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ol>&#xa;&lt;li>The one with the highest number of matching selectors + extension&lt;/li>&#xa;&lt;li>The one which is registered to a resource type closest to the requested one (when traversing the resource type hierarchy up)&lt;/li>&#xa;&lt;li>The one with the highest&amp;nbsp;service.ranking&amp;nbsp;property&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_668488678>
+                <textquestion_1692877342
+                    jcr:created="{Date}2020-05-17T09:52:00.070+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-17T09:52:00.070+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-17T09:52:49.110+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>What is the priority of resolving script for a renderer ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-17T09:52:51.930+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ul>&#xa;&lt;li>The more request selectors are matched, the better&lt;/li>&#xa;&lt;li>A script including the request extension matches better than one without a request extension (for html only)&lt;/li>&#xa;&lt;li>A script found earlier matches better than a script found later in the processing order. This means, that script closer to the original resource type in the resource type hierarchy is considered earlier.&lt;/li>&#xa;&lt;/ul>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1692877342>
+                <textquestion_1921309406
+                    jcr:created="{Date}2020-05-17T11:49:25.480+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-17T11:49:25.480+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-17T11:50:02.000+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>Describe most useful maven plugins that are used while developing AEM project ?&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-17T12:10:28.440+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>1. AEM project can be created with&amp;nbsp;AEM Project Archetype&lt;/p>&#xa;&lt;p>Plugins:&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>biz.aQute.bnd&amp;nbsp;bnd-maven-plugin - plugin for generating MANIFEST.MF and services declaration under OSGI-INF/metatype - processing annotations&lt;/li>&#xa;&lt;li>org.apache.sling&amp;nbsp;sling-maven-plugin - for deploying sling bundles&amp;nbsp;&lt;/li>&#xa;&lt;li>org.apache.jackrabbit - filevault-package-maven-plugin - pluign for creating jcr package&lt;/li>&#xa;&lt;li>com.day.jcr.vaul -&lt;b> content-package-maven-plugin&amp;nbsp;&lt;/b>&lt;ol>&#xa;&lt;li>&lt;b>create packages&lt;br>&#xa;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/b>&lt;/li>&#xa;&lt;li>&lt;b>install/unistall packages&lt;/b>&lt;/li>&#xa;&lt;li>get all packages installed on server&lt;/li>&#xa;&lt;li>remove packages&lt;/li>&#xa;&lt;/ol>&#xa;&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1921309406>
+                <textquestion_1077003275
+                    jcr:created="{Date}2020-05-17T12:45:17.377+02:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-05-17T12:45:17.377+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aemexamples/components/quiz/question/textQuestion">
+                    <question
+                        jcr:lastModified="{Date}2020-05-17T12:45:28.539+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;p>How one can access logs of AEM instance ?&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
+                        textIsRich="true"/>
+                    <answer
+                        jcr:lastModified="{Date}2020-05-17T12:46:59.148+02:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="foundation/components/text"
+                        text="&lt;ol>&#xa;&lt;li>From file system : /crx-quickstart/logs&lt;/li>&#xa;&lt;li>from system console:&amp;nbsp;/system/console/status-slinglogs&lt;/li>&#xa;&lt;li>from the operation tools&amp;nbsp;/libs/granite/operations/content/diagnosis.html&amp;nbsp;&lt;/li>&#xa;&lt;/ol>&#xa;"
+                        textIsRich="true"/>
+                </textquestion_1077003275>
             </responsivegrid_1958287619>
         </root>
     </jcr:content>
