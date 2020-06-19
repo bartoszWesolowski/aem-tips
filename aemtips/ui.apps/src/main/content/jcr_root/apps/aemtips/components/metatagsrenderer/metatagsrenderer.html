@@ -1,0 +1,5 @@
+<sly data-sly-use.model="com.aem.tips.core.models.metatags.MetaTagsComponentModel"/>
+<meta data-sly-repeat.metaTag="${model.metaTags}"
+      data-sly-attribute.name="${metaTag.name}"
+      data-sly-attribute.content="${metaTag.content}"
+      data-sly-attribute="${metaTag.additionalProperties}"/>
