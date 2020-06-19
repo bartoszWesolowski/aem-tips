@@ -6,7 +6,19 @@ import org.apache.sling.api.SlingHttpServletRequest;
 
 public interface MetaTagsProvider {
 
-  MetaTag provide(SlingHttpServletRequest request);
+  default MetaTag provide(SlingHttpServletRequest request) {
+    return new MetaTag() {
+      @Override
+      public String getName() {
+        return "";
+      }
+
+      @Override
+      public String getContent() {
+        return "";
+      }
+    };
+  }
 
   default List<MetaTag> provideAll(SlingHttpServletRequest request) {
     return ImmutableList.of(provide(request));

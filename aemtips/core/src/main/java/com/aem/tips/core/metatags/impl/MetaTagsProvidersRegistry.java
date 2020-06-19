@@ -53,12 +53,12 @@ public class MetaTagsProvidersRegistry {
     return Collections.emptyList();
   }
 
-  public void registerProvider(MetaTagsProvider provider) {
+  protected void registerProvider(MetaTagsProvider provider) {
     LOG.info("Registering new meta tags provider: [{}]", provider);
     providers.add(provider);
   }
 
-  public void unregisterProvider(MetaTagsProvider provider) {
+  protected void unregisterProvider(MetaTagsProvider provider) {
     LOG.info("Unregistering meta tags provider: [{}]", provider);
     providers.remove(provider);
   }

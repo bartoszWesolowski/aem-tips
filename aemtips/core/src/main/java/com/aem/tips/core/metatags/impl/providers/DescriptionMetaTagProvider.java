@@ -2,7 +2,7 @@ package com.aem.tips.core.metatags.impl.providers;
 
 import com.aem.tips.core.metatags.api.MetaTag;
 import com.aem.tips.core.metatags.api.MetaTagsProvider;
-import com.aem.tips.core.metatags.impl.SimpleMetaTagImpl;
+import com.aem.tips.core.metatags.impl.SimpleMetaTagsFactory;
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
 import java.util.Optional;
@@ -20,6 +20,6 @@ public class DescriptionMetaTagProvider implements MetaTagsProvider {
         .map(pm -> pm.getContainingPage(request.getResource()))
         .map(Page::getDescription)
         .orElse(StringUtils.EMPTY);
-    return new SimpleMetaTagImpl("description", description);
+    return SimpleMetaTagsFactory.description(description);
   }
 }
