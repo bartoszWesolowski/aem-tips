@@ -11,7 +11,7 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
 @Component(service = MetaTagsProvider.class, immediate = true)
-public class NoIndexMetaTagProvider implements MetaTagsProvider {
+public class RobotsMetaTagProvider implements MetaTagsProvider {
 
   @Reference
   private PageModelFactory pageModelFactory;

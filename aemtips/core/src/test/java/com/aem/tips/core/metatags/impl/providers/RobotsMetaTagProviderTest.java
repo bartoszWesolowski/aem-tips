@@ -18,9 +18,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 @ExtendWith(AemContextExtension.class)
-class NoIndexMetaTagProviderTest {
+class RobotsMetaTagProviderTest {
 
-  private MetaTagsProvider tested = new NoIndexMetaTagProvider();
+  private MetaTagsProvider tested = new RobotsMetaTagProvider();
 
   private PageModelFactory pageModelFactory = mock(PageModelFactory.class);
 
