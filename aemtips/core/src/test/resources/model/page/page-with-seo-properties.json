@@ -1,0 +1,18 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:title": "Test",
+    "cq:template": "/conf/aemtips/settings/wcm/templates/page-content",
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:description": "This is my custom description",
+    "cq:conf": "/conf/aemtips",
+    "sling:resourceType": "aemtips/components/page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "seo": {
+      "jcr:primaryType": "nt:unstructured",
+      "hideInSearchMetaTagValue": "noindex, nofollow",
+      "hideInSearch": "true"
+    }
+  }
+}

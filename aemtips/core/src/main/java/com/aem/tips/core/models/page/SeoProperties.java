@@ -1,6 +1,6 @@
 package com.aem.tips.core.models.page;
 
-public interface SeoPageProperties {
+public interface SeoProperties {
 
   boolean hideInSearch();
 
