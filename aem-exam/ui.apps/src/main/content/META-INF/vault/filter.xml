@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aem-exam/clientlibs"/>
+    <filter root="/apps/aem-exam/components"/>
+    <filter root="/apps/aem-exam/i18n"/>
+    <filter root="/apps/sling" />
+    <filter root="/apps/msm/aem-exam_blueprint" mode="merge"/>
+</workspaceFilter>
