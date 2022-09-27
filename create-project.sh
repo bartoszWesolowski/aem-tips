@@ -1,12 +1,13 @@
-mvn -B archetype:generate \
- -D archetypeGroupId=com.adobe.granite.archetypes \
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
+ -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
- -D archetypeVersion=23 \
- -D aemVersion=6.5.0 \
- -D appTitle="AEM Tips" \
- -D appId="aemtips" \
- -D groupId="com.aem.tips" \
+ -D archetypeVersion=39 \
+ -D aemVersion=6.5.9 \
+ -D appTitle="AEM Exam examples" \
+ -D appId="aem-exam" \
+ -D groupId="com.aem.exam" \
  -D frontendModule=general \
- -D includeExamples=n \
+ -D includeExamples=y \
+ -D includeErrorHandler=y \
  -D singleCountry=n
 
