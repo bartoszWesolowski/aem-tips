@@ -1,0 +1,73 @@
+<p>Replaces content of element with given text</p>
+<ul>
+  <li>
+    <p>All content of the element is replaced with given text. Given code: </p>
+    <pre>
+        <code>
+            &lt;div data-sly-text=&quot;Text provided in data-sly-text&quot;&gt;
+              &lt;p&gt;some text in p element&lt;/p&gt;
+            &lt;/div&gt;
+        </code>
+      </pre>
+    <p>should render:</p>
+    <pre>
+        <code>
+          &lt;div&gt;
+            Text provided in data-sly-text
+          &lt;/div&gt;
+        </code>
+      </pre>
+    <p>Actual code evaluated:</p>
+    <div data-sly-text="Text provided in data-sly-text">
+      <p>some text in p element</p>
+    </div>
+  </li>
+  <li>
+    <p>If the text value is empty then content is replaced with empty text (nothing will be
+      displayed)</p>
+    <pre>
+        <code>
+           &lt;div data-sly-text=&quot;${null}&quot;&gt;
+              &lt;p&gt;data-sly-text={null value}&lt;/p&gt;
+              &lt;div&gt;this will not be rendered&lt;/div&gt;
+            &lt;/div&gt;
+
+          ============ Output ============
+            &lt;div&gt;&lt;/div&gt;
+        </code>
+      </pre>
+    <p>Actual code evaluated: </p>
+    <div data-sly-text="${null}">
+      <p>data-sly-text={null value}</p>
+      <div>this will not be rendered</div>
+    </div>
+  </li>
+
+  <li>
+    <p>Default context of the element is set to <strong>text</strong> but it can be overriten</p>
+    <pre>
+        <code>
+           &lt;p data-sly-text=&quot;${'&lt;strong&gt;Bold and Proud&lt;/strong&gt;' @ context='html'}&quot;&gt;&lt;/p&gt;
+
+          ============ Output ============
+           &lt;p&gt;&lt;strong&gt;Bold and Proud&lt;/strong&gt;&lt;/p&gt;
+        </code>
+      </pre>
+    <p>Actual code evaluated: </p>
+    <p data-sly-text="${'<strong>Bold and Proud</strong>' @ context='html'}"></p>
+
+    <p>Same example without context change</p>
+    <pre>
+        <code>
+           &lt;p data-sly-text=&quot;${'&lt;strong&gt;Bold and Proud&lt;/strong&gt;'}&quot;&gt;&lt;/p&gt;
+        </code>
+      </pre>
+    <pre>
+      ============ Output ============
+      &lt;strong&gt;Bold and Proud&lt;/strong&gt;
+    </pre>
+    <p>Actual code evaluated: </p>
+    <p data-sly-text="${'<strong>Bold and Proud</strong>'}"></p>
+  </li>
+</ul>
+</div>

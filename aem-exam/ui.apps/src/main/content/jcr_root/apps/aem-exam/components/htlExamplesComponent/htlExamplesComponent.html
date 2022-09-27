@@ -1,0 +1,90 @@
+<h1>${component.title} qqqq</h1>
+<sly data-sly-use.model="com.aem.exam.core.htl.HtlExamplesComponentModel"/>
+<div>
+  <h2>Global objects</h2>
+  <p>For all objects see: <a
+      href="https://docs.adobe.com/content/help/en/experience-manager-htl/using/htl/global-objects.html">Documentation</a>
+  </p>
+  <ul>
+    <li>properties - content of current resource</li>
+    <li>pageProperties - page jcr:content properties</li>
+    <li>inheritedPageProperties</li>
+    <li>component - com.day.cq.wcm.api.components.Component</li>
+    <li>currentPage - com.day.cq.wcm.api.Page</li>
+    <li>request - org.apache.sling.api.SlingHttpServletRequestet</li>
+  </ul>
+</div>
+<div>
+  <h2>data-sly-text</h2>
+  <sly data-sly-include="examples/sly-text.html"/>
+
+<div>
+  <h2>data-sly-attribute</h2>
+  <p>Adds attribute to host element</p>
+  <ul>
+    <li>
+      <p>elements evaluated from left to right</p>
+      <p title="Title" data-sly-attribute.title="Title 1"
+         data-sly-attribute.title="${'Title evaluated'}">
+        title="Title" data-sly-attribute.title="Title 1" data-sly-attribute.title="${'$'}{'Title
+        evaluated'}" will evaluate to
+      <p>title="Title evaluated"</p>
+      </p>
+    </li>
+    <li>
+      <p title="Title" data-sly-attribute.title="Title 1"
+         data-sly-attribute.title="${'Title evaluated'}" data-sly-attribute.title="${null}">
+        title="Title" data-sly-attribute.title="Title 1" data-sly-attribute.title="${'$'}{'Title
+        evaluated'}" data-sly-attribute.title="${'$'}{null}"
+      <p>Will not render title attribute</p>
+      </p>
+    </li>
+    <li>
+      <p data-sly-attribute.title="Title 1" data-sly-attribute.title="${'Title evaluated'}"
+         data-sly-attribute.title="${null}" title="Title plain text">
+        data-sly-attribute.title="Title 1" data-sly-attribute.title="${'$'}{'Title evaluated'}"
+        data-sly-attribute.title="${'$'}{null}" title="Title plain text"
+      <p>Will resolve to title="Title plain text"</p>
+      </p>
+    </li>
+    <li>
+      <p class="${''}" data-sly-attribute.id="${''}">class="${'$'}{''}"
+        data-sly-attribute.id="${''}"</p>
+      <p>Will not render any attribute</p>
+    </li>
+    <li>
+      <p class="" data-sly-attribute.id="">class="" data-sly-attribute.id=""</p>
+      <p>Will not render only class="", id will not be rendered</p>
+    </li>
+    <li>
+      <p>This directive can also process a Map input to render multiple attributes</p>
+      <div data-sly-attribute="${model.attributes}">
+        <p>Following map attrubutes will render</p>
+        <ul data-sly-list.key="${model.attributes}">
+          <li>Key: '${key}' - value: '${model.attributes[key]}'</li>
+        </ul>
+        <p>attr1="attr1 value" attr2 attr-list="v1,v2"</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div>
+  <h2>data-sly-repeat</h2>
+  <ul>
+    <li data-sly-repeat="${model.items}">${itemList.count}. ${item}, Odd: ${itemList.odd}</li>
+  </ul>
+</div>
+<div>
+  <h2>data-sly-list</h2>
+  <ul data-sly-list.variableName="${model.items}">
+    <li>${variableNameList.count}. ${variableName}, Odd: ${variableNameList.odd}</li>
+  </ul>
+</div>
+
+<div>
+  <h2>data-sly-resource</h2>
+  <ul>
+    <li></li>
+  </ul>
+</div>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2020-05-14T15:25:01.618+02:00"
-        cq:lastModifiedBy="admin"
         cq:tags="[]"
         cq:template="/conf/aemexamples/settings/wcm/templates/simple-template"
         jcr:primaryType="cq:PageContent"
@@ -21,652 +21,412 @@
                     text="&lt;p>Added on template level&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
                     textIsRich="true"/>
                 <textquestion
-                    jcr:created="{Date}2020-05-06T22:07:57.235+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-06T22:07:57.235+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-06T22:08:02.684+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>What is the location of scripts that handles error responses ? How to write custom error handler ?&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-06T22:08:17.086+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Default error handlers are located under&amp;nbsp;&lt;b>/libs/sling/servlet/errorhandler&lt;/b>&lt;/p>&#xa;&lt;p>To write custom error handler this location needs to be created under /apps. The default script is default.jsp.&amp;nbsp;&lt;/p>&#xa;&lt;p>To implement 404 response handler an 404.jsp needs to be created under apps errorhandler directory.&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion>
                 <textquestion_985105605
-                    jcr:created="{Date}2020-05-06T22:38:46.399+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-06T22:38:46.399+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-06T22:40:13.670+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>What will be the order of best matching scripts to render request for resource with resource type: hr/jobs, GET request for path:&amp;nbsp;/content/corporate/jobs/developer.print.a4.html&lt;/p>&#xa;&lt;ol>&#xa;&lt;li>&lt;p>print.esp&lt;/p>&#xa;&lt;/li>&#xa;&lt;li>&lt;p>print.html.esp&lt;/p>&#xa;&lt;/li>&#xa;&lt;li>&lt;p>print/a4.esp&lt;/p>&#xa;&lt;/li>&#xa;&lt;li>&lt;p>print/a4/html.esp&lt;/p>&#xa;&lt;/li>&#xa;&lt;li>&lt;p>print/a4.html.esp&lt;/p>&#xa;&lt;/li>&#xa;&lt;/ol>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-06T22:40:25.792+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>(8) - (7) - (6) - (5) - (4) - (3) - (2) - (1).&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_985105605>
                 <text_727746304
-                    jcr:created="{Date}2020-05-07T08:53:20.657+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-07T08:53:32.214+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="foundation/components/text"
                     text="&lt;p>&lt;b>Client libraries&lt;/b>&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
                     textIsRich="true"/>
                 <textquestion_1135766331
-                    jcr:created="{Date}2020-05-07T08:53:35.546+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-07T08:53:35.546+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-07T08:53:49.183+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>What is the node type for client library ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-07T08:53:57.604+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>cq:ClientLibraryFolder&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_1135766331>
                 <textquestion_1958606366
-                    jcr:created="{Date}2020-05-07T08:54:08.160+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-07T08:54:08.160+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-07T08:55:02.672+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>What's need to be added to Client Lib definition stored under /apps to make it accessible though /etc directory in the HTML including script ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-07T08:55:21.793+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>allowProxy property needs to be set to true:&amp;nbsp;allowProxy=&amp;quot;{Boolean}true&amp;quot;&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_1958606366>
                 <textquestion_1932231446
-                    jcr:created="{Date}2020-05-07T08:57:23.754+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-07T08:57:23.754+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-07T08:57:47.642+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>How to include client library on the page using HTL ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-07T08:59:00.726+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p style=&quot;margin-left: 40px;&quot;>&lt;br>&#xa;&amp;lt;html data-sly-use.clientlib=&amp;quot;/libs/granite/sightly/templates/clientlib.html&amp;quot;&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;sly data-sly-call=&amp;quot;${clientlib.css @ categories='myCategory'}&amp;quot;/&amp;gt; &amp;lt;head&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;sly data-sly-call=&amp;quot;${clientlib.js @ categories='myCategory'}&amp;quot;/&amp;gt;&amp;nbsp;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;p>Or:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;sly data-sly-use.clientlib=&amp;quot;/libs/granite/sightly/templates/clientlib.html&amp;quot;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; data-sly-call=&amp;quot;${clientlib.all @ categories=['myCategory1', 'myCategory2']}&amp;quot;/&amp;gt;&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_1932231446>
                 <textquestion_2026142152
-                    jcr:created="{Date}2020-05-07T09:00:44.903+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-07T09:00:44.903+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-07T09:01:00.413+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>How to include client libs using jsp tag ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-07T09:01:03.923+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>&amp;lt;%-- all: js + theme (theme-js + css) --%&amp;gt;&lt;br>&#xa;&amp;lt;ui:includeClientLib categories=&amp;quot;cq.wcm.edit&amp;quot; /&amp;gt;&lt;br>&#xa;&lt;br>&#xa;&amp;lt;%-- only js libs --%&amp;gt;&lt;br>&#xa;&amp;lt;ui:includeClientLib js=&amp;quot;cq.collab.calendar, cq.security&amp;quot; /&amp;gt;&lt;br>&#xa;&lt;br>&#xa;&amp;lt;%-- theme only (theme-js + css) --%&amp;gt;&lt;br>&#xa;&amp;lt;ui:includeClientLib theme=&amp;quot;cq.collab.calendar, cq.security&amp;quot; /&amp;gt;&lt;br>&#xa;&lt;br>&#xa;&amp;lt;%-- css only --%&amp;gt;&lt;br>&#xa;&amp;lt;ui:includeClientLib css=&amp;quot;cq.collab.calendar, cq.security&amp;quot; /&amp;gt;&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_2026142152>
                 <textquestion_424751721
-                    jcr:created="{Date}2020-05-07T09:01:59.774+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-07T09:01:59.774+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-07T09:02:47.752+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Which client library will be included if there are two client libs with same category with same paths under /apps and /libs ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-07T09:02:59.167+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Client lib under /apps takes precedence&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_424751721>
                 <textquestion_311139847
-                    jcr:created="{Date}2020-05-07T09:05:15.231+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-07T09:05:15.231+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-07T09:05:45.053+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>What is the difference between embed and dependencies properties in client lib definition?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-07T09:08:21.928+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Client libraries in dependencies will be included on a page with additional HTTP call to client lib before including the one that has dependency. For example if client lib &lt;i>publicmain &lt;/i>has a dependency on &lt;i>jquery &lt;/i>client lib then AEM will generate the following code snippet:&lt;/p>&#xa;&lt;p style=&quot;margin-left: 40px;&quot;>&amp;lt;script src=&amp;quot;/etc/clientlibs/foundation/cq.jquery.js&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&lt;br>&#xa;&amp;lt;script src=&amp;quot;/etc/clientlibs/mylibs/publicmain.js&amp;quot; type=&amp;quot;text/javascript&amp;quot;&amp;gt;&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;p>If this was embeded there would be only one call jquery client lib content would be incuded inside the publicmain call.&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_311139847>
                 <textquestion_885733841
-                    jcr:created="{Date}2020-05-07T09:25:00.222+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-07T09:25:00.222+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-07T09:25:19.148+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Which OSGi service is used to configure global client lib minification options ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-07T09:25:22.846+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Adobe Granite HTML Library Manager&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_885733841>
                 <textquestion_863161004
-                    jcr:created="{Date}2020-05-07T09:30:11.660+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-07T09:30:11.660+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-07T09:30:25.803+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>What will happen if a&amp;nbsp;debugClientLibs=true will be added to a page ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-07T09:30:50.314+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Client libraries will have an import statements that will point to files that are included in the client lib.&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_863161004>
                 <textquestion_762614634
-                    jcr:created="{Date}2020-05-07T10:04:28.930+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-07T10:04:28.930+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-07T10:06:12.709+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>What is the url of a special view that allows to test client libs outputs, rebuild them (and clear cache), and view the client lib dependency tree ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-07T10:07:19.462+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>/libs/cq/ui/components/dumplibs/dumplibs with selectors for diffrent views:&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>.test.html - to test output of client lib include statement&lt;/li>&#xa;&lt;li>.rebuild.html - to clear cache and rebuild client libs&lt;/li>&#xa;&lt;li>.tree.html - to display client lib hierarchy&amp;nbsp;&lt;/li>&#xa;&lt;/ul>&#xa;"
                         textIsRich="true"/>
                 </textquestion_762614634>
                 <textquestion_1028782451
-                    jcr:created="{Date}2020-05-07T10:13:07.899+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-07T10:13:07.899+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-07T10:13:39.023+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>What will happen in client lib A embeds B and B embeds client lib C ? Will C be included in the outputed css /js ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-07T10:14:00.028+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Embed property&lt;b> is NOT &lt;/b>transitive – If Clientlib A embeds Clientlib B which embeds Clientlib C, then only Clientlib A and B will be included in the page. Clientlib A and B will be combined into one CSS and JS files as well. In order to include Clientlib C, it must be added to the embed property of Clientlib A as well.&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_1028782451>
                 <textquestion_1182350077
-                    jcr:created="{Date}2020-05-07T22:27:31.238+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-07T22:27:31.238+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-07T22:27:43.549+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Can you create a page named &lt;b>structure ?&amp;nbsp;&lt;/b>&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-07T22:28:15.701+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Yes but it will not be editable in page editor.&amp;nbsp;&lt;a href=&quot;https://docs.adobe.com/content/help/en/experience-manager-64/developing/introduction/editor-limitations.html&quot;>https://docs.adobe.com/content/help/en/experience-manager-64/developing/introduction/editor-limitations.html&lt;/a>&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_1182350077>
                 <textquestion_203547419
-                    jcr:created="{Date}2020-05-08T15:48:09.571+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-08T15:48:09.571+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-08T15:48:38.323+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Which category should be used for a clinet lib that should be included for extending dialog functionality ?&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-08T15:48:41.746+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>cq.authoring.dialog&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_203547419>
                 <text_1632304580
-                    jcr:created="{Date}2020-05-08T12:03:40.362+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-08T12:03:46.761+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="weretail/components/content/text"
                     text="&lt;p>&lt;b>Templates&lt;/b>&lt;/p>&#xa;"
                     textIsRich="true"/>
                 <textquestion_480914918
-                    jcr:created="{Date}2020-05-08T12:03:50.481+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-08T12:03:50.481+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-08T12:05:30.838+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Given we want to create page under page P, of template T. P has no cq:allowedTemplates property and T has no allowedPaths, allowedChildren and allowedParents&amp;nbsp; property set. What needs to be done to make it possible to create page like that ?&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-08T12:06:54.132+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Template T and page P must belong to same application: second part in path of template and page must be the same, for example /apps/&lt;b>my-app&lt;/b> and /content/&lt;b>my-app&lt;/b>/,,,&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_480914918>
                 <textquestion_1116385964
-                    jcr:created="{Date}2020-05-08T12:35:24.548+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-08T12:35:24.548+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-08T12:35:37.612+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>What is the name of group that is allowed to edit templates?&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-08T12:36:03.368+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>template-authors&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_1116385964>
                 <textquestion_352185487
-                    jcr:created="{Date}2020-05-08T12:38:20.991+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-08T12:38:20.991+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-08T12:39:21.968+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Can author move or delete parts of page that are defined in template structure ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-08T12:40:14.676+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>No, author can only add components to parys that is enabled for that on template structure but can not change order or delete any of components set in that template mode.&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_352185487>
                 <text_1323051207
-                    jcr:created="{Date}2020-05-08T16:08:08.329+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-08T16:08:13.301+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="foundation/components/text"
                     text="&lt;p>Tagging&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
                     textIsRich="true"/>
                 <textquestion_1792888625
-                    jcr:created="{Date}2020-05-08T16:08:16.132+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-08T16:08:16.132+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-08T16:08:26.349+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>What is the node type o tag root node ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-08T16:09:09.907+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>It can not be cq:Tag, but can be for example &lt;b>sling:Folder&lt;/b>: /content/cq:tags&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_1792888625>
                 <textquestion_1155141504
-                    jcr:created="{Date}2020-05-08T16:10:20.223+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-08T16:10:20.223+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-08T21:36:52.209+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>What is a tag namespace ?&lt;/p>&#xa;&lt;ul>&#xa;&lt;li>fruit/apple/red&lt;/li>&#xa;&lt;li>animal:dog&lt;/li>&#xa;&lt;/ul>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-08T21:39:38.507+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;ul>&#xa;&lt;li>default - if no : in the name then tag belongs to default namespace&lt;/li>&#xa;&lt;li>animal&lt;/li>&#xa;&lt;/ul>&#xa;&lt;p>Namespaces allow to group things.&amp;nbsp;&lt;/p>&#xa;&lt;p>The tag's namespace is the first level in the taxonomy subtree, which is the node immediately below the&amp;nbsp;&lt;a href=&quot;https://docs.adobe.com/content/help/en/experience-manager-64/developing/platform/tagging/framework.html#taxonomy-root-node&quot;>taxonomy root node&amp;nbsp;&lt;/a>. A namespace is a node of type&amp;nbsp;cq:Tag&amp;nbsp;whose parent is not a&amp;nbsp;cq:Tag&amp;nbsp;node type.'&lt;/p>&#xa;&lt;p>All tags have a namespace. If no namespace is specified, the tag is assigned to the default namespace, which is TagID&amp;nbsp;default&amp;nbsp;(Title is&amp;nbsp;Standard Tags),&amp;nbsp;that is&amp;nbsp;/content/cq:tags/default.&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_1155141504>
                 <textquestion_756570734
-                    jcr:created="{Date}2020-05-08T16:16:19.340+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-08T16:16:19.340+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-08T16:16:36.187+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Give the paths to the tags defined by following ids:&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-08T16:16:39.146+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>If the tag ID contains a colon &amp;quot;:&amp;quot;, the colon separates the namespace from the tag or sub-taxonomy, which are then separated with normal slashes &amp;quot;/&amp;quot;. If the tag ID does not have a colon, the default namespace is implied.&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_756570734>
                 <textquestion_207945968
-                    jcr:created="{Date}2020-05-08T21:46:49.518+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-08T21:46:49.518+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-08T21:49:44.302+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>What will happen if a tag A that is referenced by some pages is moved under tag B ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-08T21:53:50.539+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>The tag will have additional property cq:movedTo that will point to new destination of the tag under tag B. The new tag under B will have a cq:backLinks property that will point to the tag A.&lt;/p>&#xa;&lt;p>Tag A will be cleared once it's not referenced by any page by tag garbage collector.&amp;nbsp; All tags pages that use the tag A reference will still points to the old path but will be resolved to the new tag (for example properties will display the new name for the tag).&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_207945968>
                 <text_2099119879
-                    jcr:created="{Date}2020-05-10T11:23:36.982+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-10T11:23:44.716+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="weretail/components/content/text"
                     text="&lt;p>&lt;b>OSGI&lt;/b>&lt;/p>&#xa;"
                     textIsRich="true"/>
                 <textquestion_1880857602
-                    jcr:created="{Date}2020-05-10T11:23:47.734+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-10T11:23:47.734+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-10T11:25:54.104+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Will the following component be registered as ExampleService ? Could it be referenced by other services ?&lt;/p>&#xa;&lt;p>&lt;br>&#xa;@Component&lt;br>&#xa;public class LazyLoadedServiceImpl implements ExampleService { ... }&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-10T11:26:19.310+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Yes it will and it will be available for usage in other components. It will be created in a lazy manner&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_1880857602>
                 <textquestion_447887252
-                    jcr:created="{Date}2020-05-10T11:23:52.403+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-10T11:23:52.403+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-10T11:24:35.213+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Which method/methods will be called when a component definition contains both @Activate and @Modified annotated methods and it's configuration is changed ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-10T11:24:48.684+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Method annotatet with Modified will be called&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_447887252>
                 <textquestion_519603408
-                    jcr:created="{Date}2020-05-10T11:49:20.750+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-10T11:49:20.750+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-10T11:50:18.644+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Wat is a difference between reference scopes: bundle, prototype,&amp;nbsp;&lt;i>prototype_required&lt;/i>&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-10T11:58:39.619+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>bundle scope - all services in the bundle will use the same service instance&lt;/p>&#xa;&lt;p>prototype scope - if referenced service has a prototype scope then then service using reference with prototype scope might get different inscanec of the service&amp;nbsp;&lt;/p>&#xa;&lt;p>prototype_required - reference service must be declared in prototype scope. With reference with this scope all services with get unique instance of the service&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_519603408>
                 <textquestion_277362745
-                    jcr:created="{Date}2020-05-10T15:00:26.811+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-10T15:00:26.811+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-10T15:00:47.766+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Characterise STATIC reference policy&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-10T15:04:34.647+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;ul>&#xa;&lt;li>default policy&lt;/li>&#xa;&lt;li>good for services that does not change too often&lt;/li>&#xa;&lt;li>Will reactivate component if some changes needs to be applied&lt;/li>&#xa;&lt;li>Should nnot be used if component activation is expensive&lt;/li>&#xa;&lt;li>with RELUCTANT policy option registration of new best matching services will not reactivate component&lt;/li>&#xa;&lt;li>with GREEDY policy option registration of new best matching service will cause reactivation&lt;/li>&#xa;&lt;/ul>&#xa;"
                         textIsRich="true"/>
                 </textquestion_277362745>
                 <textquestion_718185535
-                    jcr:created="{Date}2020-05-10T15:05:08.708+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-10T15:05:08.708+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-10T15:05:20.804+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Characterise DYNAMIC reference policy&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-10T15:09:29.064+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;ul>&#xa;&lt;li>updates on services might be applied to service without reactivating the component&lt;/li>&#xa;&lt;li>if injection is done trhoug methods then they will be called when service set will change or service will be updated&lt;/li>&#xa;&lt;li>if policy option is RELUCTANT then single value references will not be changed when new best matching service is, for multiple services new service will be added to collection&lt;/li>&#xa;&lt;li>for policy option GREEDY single value references will be updated if better match is found. new services will be also added for multiple reference&lt;/li>&#xa;&lt;/ul>&#xa;"
                         textIsRich="true"/>
                 </textquestion_718185535>
                 <textquestion_41458885
-                    jcr:created="{Date}2020-05-13T21:46:28.247+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-13T21:46:28.247+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-13T21:47:14.946+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Describe how ACL are resolved for a given subject&amp;nbsp; and path?&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-13T21:49:11.170+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>Oak goes up the hierarchy tree and looks for ACL entries that match the subject. The first entry that matches the subject will be used.&lt;/p>&#xa;&lt;p>Important note: if there is an ACL for a principal in the hierarchy it &lt;b>always &lt;/b>takes precedence (no matter what the other entries for his groups were found)&lt;/p>&#xa;"
                         textIsRich="true"/>
                 </textquestion_41458885>
                 <textquestion_846396895
-                    jcr:created="{Date}2020-05-14T15:15:59.652+02:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-05-14T15:15:59.652+02:00"
-                    jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aemexamples/components/quiz/question/textQuestion">
                     <question
-                        jcr:lastModified="{Date}2020-05-14T15:16:11.849+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>How to install Service pack or hotfix ?&lt;/p>&#xa;"
                         textIsRich="true"/>
                     <answer
-                        jcr:lastModified="{Date}2020-05-14T15:25:01.605+02:00"
-                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="foundation/components/text"
                         text="&lt;p>1. Folder install can be created under /crx-quickstart and the desired zip can be pasted there. AEM will install it automatically&lt;/p>&#xa;&lt;p>2. Can be installed with curl command/http request (remebre to add&amp;nbsp;&amp;nbsp;cmd=install&amp;amp;recursive=true - to install nested packages)&lt;/p>&#xa;&lt;p>curl -u admin:admin -F file=@&amp;quot;name of zip file&amp;quot; -F name=&amp;quot;name of package&amp;quot;&amp;nbsp;&lt;br>&#xa;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -F force=true -F install=true http://localhost:4502/crx/packmgr/service.jsp&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;&lt;p>If installation has finished sucesfully then under&amp;nbsp;&lt;i>/system/console/productinfo&lt;/i> AEM should display new version&lt;/p>&#xa;&lt;p>&amp;nbsp;&lt;/p>&#xa;"
